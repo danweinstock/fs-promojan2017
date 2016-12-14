@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_03_chatBalloon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="21" cy="21" r="21"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-662.000000, -1616.000000)">
+            <g id="center_icons" transform="translate(652.000000, 1112.000000)">
+                <g id="icon_03_chatBalloon" transform="translate(10.000000, 504.000000)">
+                    <use id="Oval" stroke="#DFDFDF" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <path d="M18.9772201,30.1802174 C18.7509091,30.4776087 18.3060574,30.4756522 18.0826603,30.1763043 L15.9273636,27.2865217 C15.8166364,27.1319565 15.6379187,27.04 15.4485167,27.04 L12.9493828,27.04 C11.8731914,27.04 11,26.1605435 11,25.0756522 L11,14.9633696 C11,13.8784783 11.8722201,13 12.9493828,13 L29.9605885,13 C31.0367799,13 31.9099713,13.8784783 31.9099713,14.9633696 L31.9099713,25.0766304 C31.9099713,26.1605435 31.0367799,27.04 29.9605885,27.04 L21.6541005,27.04 C21.4705263,27.04 21.2986077,27.1251087 21.1878804,27.2718478 L18.9772201,30.1802174 Z" id="Fill-1" fill="#BABCBF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

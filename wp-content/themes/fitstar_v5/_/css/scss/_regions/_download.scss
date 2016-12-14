@@ -1,0 +1,566 @@
+// ==========================================================================
+// Legacy Download Page
+// ==========================================================================
+.page-template-page-download-php {
+	
+	// ==========================================================================
+	// HERO
+	// ==========================================================================
+	#hero {
+		height: 550px;
+		background: url(../images/hero-download.jpg) 0 0 no-repeat;
+		background-size: cover;		
+		position: relative;
+		z-index: 2;
+		
+		.appstore-button {
+			display: inline-block;
+			height: 50px;
+			width: 169px;
+			margin: 20px 0 15px 0;
+		}
+
+		.note {
+			margin: 0;
+			font-size: 14px;
+		}
+		
+		.background-image {
+    		position: absolute;
+    		right: 55%;
+    		bottom: -25px;
+    		display: block;
+    		height: 462px;
+    		width: 907px;
+    		background: url(../images/app-store-download.png) 0 0 no-repeat;
+    		z-index: 10;
+    	}
+    	
+		#app-store-reviews {
+			position: relative;
+			margin: 40px 0 0 0;
+			
+			.slider {
+				display: inline-block;
+				position: relative;
+				width: 350px;
+				height: 350px;
+				background: #fff;
+				overflow: hidden;
+				margin: 0;
+				-webkit-border-radius: 50%;
+				   -moz-border-radius: 50%;
+						border-radius: 50%;
+
+				li {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					padding: 50px 40px;
+					display: none;
+
+					h6 {
+						margin: 15px 0 5px 0;
+					}
+					
+					&.active {
+						display: block;
+					}
+				}
+			}
+			
+			.slider-controls {
+				position: absolute;
+				top: 50%;
+				margin: -20px 0 0 0;
+
+				&#slider-control-prev {
+					left: 0;
+				}
+
+				&#slider-control-next {
+					right: 0;
+				}
+
+				a {
+					display: inline-block;
+					background: $green;
+					color: #fff;
+					font-size: 30px;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					line-height: 52px;
+					-webkit-border-radius: 4px;
+					   -moz-border-radius: 4px;
+							border-radius: 4px;
+					-webkit-transition: background 0.3s ease-out;
+					   -moz-transition: background 0.3s ease-out;
+							transition: background 0.3s ease-out;
+
+					&:hover {
+						background: darken($green, 10);
+					}
+
+					&.disabled {
+						opacity: 0.5;
+					}
+				}	
+			}
+		}
+	}
+	
+
+	// ==========================================================================
+	// MAIN
+	// ==========================================================================
+	#main {
+		position: relative;
+		z-index: 1;
+		background: #fff;
+		margin: 0;
+		padding: 200px 0 80px 0;
+
+		&:after {
+			content: " ";
+			position: absolute;
+			top: 180px;
+			bottom: 40px;
+			background: $greyBorder;
+			width: 1px;
+			left: 50%;
+		}
+
+		@media only screen and (max-width: 1024px) {
+			margin: 0;
+			padding: 200px 0 80px 0;
+		}
+
+		h2 {
+			margin: 0 0 30px 0;
+		}
+
+		.freestyle-session-list {
+			margin: 0;
+			padding: 0;
+			width: 90%;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				a {
+					display: block;
+					border-bottom: 1px solid $greyBorder;
+					padding: 40px 0 40px 140px;
+					position: relative;
+
+					.thumbnail {
+						width: 120px;
+						position: absolute;
+						left: 0;
+						top: 20px;
+					}
+
+					h3 {
+						color: $cyan;
+						text-transform: none;
+						font-weight: $book;
+					}
+				}
+
+				&:last-child {
+
+					a {
+						border-bottom: none;
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+		
+		.about-video {
+			display: block;
+			width: 100%;
+			height: auto;
+		
+			.icon-play {
+				position: relative;
+				display: block;
+				margin: 80px 0 0 0;
+	
+				&:before {
+					background: url(../images/bg-blurred-play-button.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					left: 50%;
+					width: 78px;
+					height: 78px;
+					text-align: center;
+					display: block;
+					line-height: 78px;
+					z-index: 12;
+					top: -39px;
+					color: #fff;
+					margin: 0 0 0 -39px;
+					font-size: 80px;
+					-webkit-transition: color 0.3s ease-out;
+					   -moz-transition: color 0.3s ease-out;
+							transition: color 0.3s ease-out;
+					-webkit-border-radius: 50%;
+					   -moz-border-radius: 50%;
+							border-radius: 50%;
+				}
+	
+				img {
+					position: relative;
+					z-index: 10;
+					margin: 0;
+					padding: 0;
+				}
+	
+				&:hover {
+	
+					&:before {
+						color: $cyan;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// Download Apps Hero
+// ==========================================================================
+#hero-download {
+	overflow: visible;
+	height: auto;
+	position: relative;
+	z-index: 2;
+	padding: 60px 0 0 0;
+	top: 60px;
+
+	@media only screen and (min-width: 641px) {
+		padding: 100px 0 0 0;
+		top: 70px;
+	}
+
+	&:after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		width: auto;
+		height: auto;
+		background: rgba(49,49,49,0.8);
+		content: "";
+		z-index: 1;
+	}
+
+	> .row {
+		position: relative;
+		z-index: 2;
+	}
+
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.composition {
+		position: relative;
+		display: inline-block;
+		position: relative;
+		bottom: -60px;
+		max-width: 100%;
+	}
+
+	img {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+	}
+
+	a {
+		display: none;
+
+		@media only screen and (min-width: 641px) {
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			z-index: 2;
+		}
+	}
+	
+	// Download PT
+	&.app-pt {
+		background: url(../images/hero-download-pt.jpg) bottom center no-repeat #000;
+		background-size: cover;
+
+		.ios-link {
+			left: 32%;
+			right: 0;
+		}
+
+		.android-link {
+			left: 0;
+			right: 68%;
+		}
+	}
+
+
+	// Download All Apps
+	&.all-apps {
+		background: url(../images/hero-download-all-apps.jpg) center center no-repeat #000;
+		background-size: cover;
+
+		.composition {
+			width: 140%;
+			max-width: 140%;
+			left: -20%;
+
+			@media only screen and (min-width: 641px) {
+				width: 100%;
+				max-width: 100%;
+				left: inherit;
+			}
+		}
+
+		.pt {
+			left: 0;
+			right: 68%;
+		}
+
+		.android-link {
+			left: 32%;
+			right: 51%;
+		}
+
+		.yoga {
+			left: 49%;
+			right: 0;
+		}
+	}
+}
+
+
+// ==========================================================================
+// Download Buttons Panel
+// ==========================================================================
+#download-buttons {
+	position: relative;
+	z-index: 1;
+	padding: 150px 0 40px 0;
+	border-bottom: 1px solid #dbdbdb;
+
+	a {
+		display: inline-block;
+		margin: 10px 15px;
+	}
+
+	&.all-apps {
+		padding: 120px 0 40px 0;
+
+		@media only screen and (min-width: 641px) {
+			padding: 150px 0 40px 0;
+		}
+
+		p {
+			margin: 30px 0 10px 0;
+			font-size: 14px;
+
+			@media only screen and (min-width: 641px) {
+				margin: 0 0 10px 0;
+			}
+		}
+		
+		@media only screen and (min-width: 641px) {
+
+			.row {
+				position: relative;
+
+				&:before {
+					content: "";
+					position: absolute;
+					width: 1px;
+					height: auto;
+					top: 0;
+					bottom: 0;
+					background: #dbdbdb;
+					display: block;
+					left: 58.3333%;
+
+					@media only screen and (min-width: 1025px) {
+						left: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	.brand {
+		display: inline-block;
+		height: 12px;
+		overflow: visible;
+		margin: 0 5px;
+		position: relative;
+
+		[class^="icon-"], 
+		[class*=" icon-"] {
+			position: absolute;
+		}
+
+		&.pt {
+			width: 120px;
+		}
+
+		&.yoga {
+			width: 87px;
+		}
+	}
+
+	.icon-fitstar {
+		color: $charcoal;
+		font-size: 13px;
+		bottom: -6px;
+		left: 0;
+	}
+
+	.icon-star {
+		color: $red;
+		font-size: 22px;
+		bottom: -10px;
+		right: 0;
+	}
+
+	.icon-yoga-star {
+		color: $greenLight;
+		font-size: 24px;
+		left: 0;
+		bottom: -14px;
+	}
+
+	.icon-yoga-logo-text {
+		right: 0;
+		bottom: -6px;
+		font-size: 14px;
+	}
+}
+
+
+// ==========================================================================
+// For The Web Alternate
+// ==========================================================================
+#ftw-alternate {
+	padding-top: 80px;
+
+	@media only screen and (min-width: 641px) {
+		padding-bottom: 45px;
+	}
+
+	p {
+		color: $greyDark;
+
+		&.punch {
+			margin-bottom: 0;
+		}
+	}
+
+	.large-7 {
+		padding-bottom: 45px;
+
+		@media only screen and (min-width: 641px) {
+			padding-bottom: 80px;
+		}
+	}
+
+	hr {
+		display: block;
+		width: 100%;
+		height: 1px;
+		margin: 0 0 45px 0;
+		background: #dbdbdb;
+	}
+	
+	@media only screen and (min-width: 641px) {
+		
+		br {
+			display: none;
+		}
+	}
+	
+	.button {
+		text-transform: uppercase;
+		padding: 14px 25px;
+	}
+
+	.made-for {
+		display: inline-block;
+		width: 145px;
+		height: 69px;
+		background: url(../images/made-for-browsers.png) 0 0 no-repeat;
+		margin: 0 0 5px 0;
+		position: relative;
+		z-index: 2;
+
+		@media only screen and (min-width: 641px) {
+			position: absolute;
+			right: -240px;
+			bottom: 245px;
+			top: inherit;
+			margin: 0;
+		}
+
+		@media only screen and (min-width: 1025px) {
+			right: -30px;
+			bottom: 50px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			right: 0;
+		}
+	}
+
+	.screenshot {
+		background: url(../images/ftw-alternate-screen.png) top center no-repeat;
+		background-size: 90% auto;
+		width: 100%;
+		padding: 40% 0 0 0;
+		display: inline-block;
+		border-bottom: 1px solid #dbdbdb;
+		margin: 0 0 25px 0;
+		position: relative;
+		z-index: 1;
+
+		@media only screen and (min-width: 641px) {
+			background: url(../images/ftw-alternate-screen.png) top center no-repeat;
+			background-size: cover;
+			border: none;
+			padding: 0;
+			width: 373px;
+			height: 254px;
+			right: -410px;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+		}
+
+		@media only screen and (min-width: 1025px) {
+			right: -380px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			right: -350px;
+		}
+	}
+}

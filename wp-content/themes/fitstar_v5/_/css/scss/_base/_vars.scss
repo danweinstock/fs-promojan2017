@@ -1,0 +1,87 @@
+// ==========================================================================
+// COLOR VARIABLES
+// ==========================================================================
+// Old colors
+$charcoal: 				#333333;
+$greyDark: 				#5a5a5a;
+$greyLight: 			#c0c0c0;
+$greyBorder: 			#dbdbdb;
+$greyBody: 				#999999;
+$green: 				#26ad61;
+$greenLight:			#74C59E;
+$greenDark: 			#198F50;
+$purple: 				#8d218d;
+$orange: 				#e89f34;
+$orangeLight: 			#e9943f;
+$cyan: 					#00aff0;
+$navy: 					#243742;
+$navyDark: 				#00292F;
+$red: 					#d0233c;
+$redLight: 				#F37463;
+$redDark: 				#c81330;
+$yellow:                #e89f34;
+$pinkLight: 			#a66290;
+$turq: 					#56C4CC;
+$turqDark:              #00afb9;
+$offWhite:              #f7f9fa;
+
+// New colors
+$persimmon:				#ff5659;
+$pacificBlue:			#00b0ba;
+$yellowOrange:			#ffac38;
+$mediumRedViolet:		#C22A7C;
+$kimberley:				#7B7BAD;
+$purple:				#6F10AD;
+$gigas:					#40439A;
+$denim:					#0E69B1;
+$portGore:				#20244a;
+$ebony:					#13142f;
+$newBlack: 				#161636;
+$almostBlack: 			#1C202C;
+
+$charcoal:				rgba(0,0,0,.9);
+$cloud:					rgba(0,0,0,.85);
+$lead:					rgba(0,0,0,.75);
+$rain:					rgba(0,0,0,.7);
+$smoke:					rgba(0,0,0,.5);
+$storm:					rgba(0,0,0,.3);
+$stone:					rgba(0,0,0,.25);
+$pebble:				rgba(0,0,0,.1);
+$fog:					rgba(0,0,0,.05);
+$lightFog:				rgba(0,0,0,.03);
+$snow:					#fff;
+
+$titleColor: 			$almostBlack;
+$bodyColorDark: 		$smoke;
+$bodyColorLight: 		$stone;
+$linkColor: 			$pacificBlue;
+
+// ==========================================================================
+// GRADIENTS VARIABLES
+// ==========================================================================
+$gradient_brand:	linear-gradient(to bottom, #02D8DD 0, #01B0B9 100%);
+$gradient_red:	    linear-gradient(to bottom, $persimmon 0, $mediumRedViolet 100%);
+$gradient_pink:	    linear-gradient(to bottom, $mediumRedViolet 0, $purple 100%);
+$gradient_purple:	linear-gradient(to bottom, $purple 0, $gigas 100%);
+$gradient_blue:	    linear-gradient(to bottom, $denim 0, #00B0BA 100%);
+
+// ==========================================================================
+// TYPOGRAPHY VARIABLES
+// ==========================================================================
+$font: 'Gotham SSm A', 'Gotham SSm B';
+
+$book: 400;
+$medium: 500;
+$bold: 700;
+
+
+// ==========================================================================
+// MEDIA QUERY VARIABLES
+// ==========================================================================
+$verysmall: 			650px;
+
+$small: 				640;
+$med: 					768;
+$large: 				1024;
+$xlarge: 				1200;
+$siteOffset:			50px;

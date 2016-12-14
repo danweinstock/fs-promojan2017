@@ -1,0 +1,195 @@
+// ==========================================================================
+// GLOBAL FOOTER
+// ==========================================================================
+footer.global {
+	display: block;
+	position: relative;
+	text-align: center;
+	background: $almostBlack;
+	padding: 70px 0 25px;
+	margin: 0 -#{$siteOffset};
+	@media screen and (min-width: $large + px){
+		text-align: left;
+	}
+	.footer-content,
+	.copyright {
+		padding-left: #{$siteOffset};
+		padding-right: #{$siteOffset};
+	}
+
+	.brand {
+		display: block;
+		margin-top: -8px;
+	}
+	.small-screen-logo {
+		display: block;
+		@media screen and (min-width: $large + px){
+			display: none !important;
+		}
+	}
+	.large-screen-logo {
+		display: none;
+		@media screen and (min-width: $large + px){
+			display: block;
+		}
+	}
+
+	.footer-menu {
+		ul {
+			column-count: 2;
+			margin-bottom: 0;
+		}
+		li {
+			line-height: 1;
+			margin-bottom: 17px;
+			&:first-child {
+				@media screen and (max-width: $large + px){
+					z-index: 5;
+					width: 100%;
+					position: absolute;
+					top: -35px;
+					text-align: center;
+					left: -5px;
+				}
+			}
+
+		}
+		li:not([class*='button']) a {
+			color: #fff;
+		}
+		a {
+			font-weight: $medium;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+	}
+
+	h6 {
+		color: rgba(#fff,.3);
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+
+	.footer-downloads {
+		margin-top: 30px;
+		@media screen and (min-width: $large + px){
+			margin-top: 0;
+		}
+		.download-app-store {
+			margin-right: 5px;
+		}
+		.download-app-store, .download-play-store {
+			width: 130px;
+		}
+	}
+
+	.footer-social {
+		margin-top: 30px;
+		@media screen and (min-width: $large + px) {
+			margin-top: 0;
+		}
+		ul {
+			margin-bottom: 0;
+		}
+		li {
+			display: inline-block;
+			margin: 0 5px;
+		}
+		a {
+			font-size: 0;
+		    color: transparent;
+		    padding-right: 12px;
+			&:before {
+				font-size: 16px;
+			    color: #fff;
+				font-family: 'icomoon';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+
+		.menu-twitter a:before {
+			@extend .icon-twitter;
+		}
+
+		.menu-facebook a:before {
+			@extend .icon-facebook;
+		}
+
+		.menu-pinterest a:before {
+			@extend .icon-pinterest;
+		}
+		.menu-instagram a:before {
+			@extend .icon-instagram;
+		}
+
+		.menu-google a:before {
+			@extend .icon-google-plus; 
+			font-size: 18px;
+		}
+
+		.menu-item:nth-child(6) a:before {
+			@extend .icon-youtube;
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid rgba(#fff, .3);
+		margin-top: 55px;
+		padding-top: 25px;
+		p,
+		ul,
+		li,
+		a {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 11px;
+			color: rgba(#fff,.85);
+			margin-top: 15px;
+			// padding-right: 30px;
+		}
+		a {
+			color: $pacificBlue;
+			font-size: 11px;
+			padding: 0 5px;
+		}
+	}
+}
+
+.lang-select {
+	padding: 0 5px;
+
+	label,
+	select,
+	option {
+		color: $pacificBlue;
+		letter-spacing: normal;
+		font-size: 11px;
+		line-height: 1;
+	}
+
+	label {
+    	position: relative;
+    	white-space: nowrap;
+    	display: inline-block;
+	}
+
+	#footer-lang-select {
+		@include pre(appearance, none);
+		background: none;
+		border: none;
+		padding: 0;
+    	line-height: 2;
+    	cursor: pointer;
+    	outline: none;
+    	height: 30px;
+	}
+}

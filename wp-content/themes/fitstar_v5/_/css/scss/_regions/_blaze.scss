@@ -1,0 +1,535 @@
+.blaze-promo {
+
+    header.global.bg-white {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        @include trans(background 0.5s ease-out, border 0.5s ease-out);
+
+        @media only screen and (min-width: 642px) {
+            background: transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        &.transition {
+            border-bottom: 1px solid $greyBorder;
+            background: #fff;
+        }
+
+        .brand {
+            float: left;
+            display: inline-block;
+            margin: 12px 0 0 0;
+
+            @media only screen and (min-width: 480px) {
+                margin: 16px 15px 22px 0;
+            }
+
+            .icon-fitstar {
+                position: relative;
+                font-size: 9px;
+                color: $charcoal;
+                @include trans(background 0.5s ease-out, border 0.5s ease-out);
+
+                @media only screen and (min-width: 480px) {
+                    font-size: 14px;
+                }
+            }
+
+            .icon-star {
+                position: relative;
+                font-size: 21px;
+                right: -5px;
+                top: 3px;
+                color: $red;
+
+                @media only screen and (min-width: 480px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .icon-fitbit {
+            margin: 16px 0;
+            float: right;
+            font-size: 9px;
+
+            &:before {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+
+            @media only screen and (min-width: 480px) {
+                font-size: 14px;
+                margin: 25px 15px 25px 0;
+            }
+        }
+
+        .mobile {
+            display: block;
+
+            @media only screen and (min-width: 780px) {
+                display: none;
+            }
+        }
+
+        .tablet {
+            display: none;
+
+            @media only screen and (min-width: 780px) {
+                display: block;
+            }
+        }
+    }
+
+    .alpha,
+    .beta {
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: 642px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    p {
+        color: $greyDark;
+        margin-bottom: 40px;
+    }
+
+    .icon-fitbit {
+        @extend .zeta;
+        background: $turqDark;
+        color: $offWhite;
+        display: inline-block;
+        padding: 4px 15px 14px;
+        line-height: 1;
+        @include trans(background 0.3s ease-out);
+
+        &:before {
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            margin-right: 10px;
+            font-size: 23px;
+        }
+
+        &:hover {
+            background: darken($turqDark, 10);
+        }
+    }
+}
+
+.discover {
+    padding: 70px 0 0;
+
+    @media only screen and (min-width: 480px) {
+        padding: 90px 0 0;
+    }
+
+    .bg-blaze-hero {
+        background: url('../images/bg-blaze-hero-mobile.jpg') top left no-repeat;
+        background-size: cover;
+        position: relative;
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 300px;
+
+        @media only screen and (min-width: 642px) {
+            background: url('../images/bg-blaze-hero.jpg') center left no-repeat;
+            position: absolute;
+            width: 53%;
+            height: 100%;
+            background-size: cover;
+        }
+		@media only screen and (min-width: 1750px) {
+			width: 51%;
+
+		}
+    }
+
+    .watch {
+        background: url('../images/bg-blaze-watch-mobile.png') no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 100%;
+        position: relative;
+        right: 0;
+        top: 100px;
+        margin: 0 auto;
+        z-index: 1;
+
+        @media only screen and (min-width: 425px) {
+            top: 125px;
+        }
+
+        @media only screen and (min-width: 642px) {
+            background: url('../images/bg-blaze-watch.png') no-repeat;
+            background-size: contain;
+            width: 300px;
+            height: 100%;
+            position: absolute;
+            right: -30px;
+            top: 200px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            width: 400px;
+            right: -100px;
+            top: 170px;
+        }
+    }
+
+    .hero-copy {
+        padding-top: 70px;
+        padding-bottom: 50px;
+
+        @media only screen and (min-width: 642px) {
+            padding-top: 50px;
+        }
+
+        .v-wrapper {
+            min-height: 300px;
+            text-align: center;
+
+            @media only screen and (min-width: 642px) {
+                min-height: 565px;
+                text-align: left;
+            }
+        }
+        
+        a {
+            display: block;
+            height: 50px;
+            width: 50px;
+            @include pre(border-radius, 50%);
+            background: $cyan;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                color: #fff;
+                position: relative;
+                left: 1;
+                font-size: 40px;
+                top: 7px;
+                font-weight: bold;
+            }
+
+            @media only screen and (min-width: 642px) {
+                margin: 0;
+
+                &:before {
+                    left: 14px;
+                }
+            }
+        }
+    }
+}
+
+.workout {
+    background: $offWhite;
+    padding: 30px 0 0;
+
+    @media only screen and (min-width: 642px) {
+        padding: 75px 0 0;        
+    }
+
+    .bg-blaze-devices {
+        background: url('../images/bg-blaze-devices-mobile.png') no-repeat;
+        background-position: center center;
+        background-size: contain;
+        position: relative;
+        display: block;
+        width: 90%;
+        left: 5%;
+        top: 0;
+        height: 300px;
+        margin-bottom: 100px;
+
+        @media only screen and (min-width: 350px) {
+            height: 400px;            
+        }
+
+        @media only screen and (min-width: 450px) {
+            height: 500px;
+            margin-bottom: 80px;
+        }
+
+        @media only screen and (min-width: 642px) {
+            margin-bottom: 125px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            background: url('../images/bg-blaze-devices.png') no-repeat;
+            background-size: cover;
+            background-position: top right;
+            position: absolute;
+            left: 0px;
+            top: 75px;
+            height: 75%;
+            width: 53%;
+        }
+
+        @media only screen and (min-width: 1450px) {
+            background-size: contain;
+            max-height: 710px;
+        }
+    }
+
+    .icon-play-arrow {
+        padding: 25px 0 25px 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        top: 90%;
+        left: 0;
+        margin: 5px 0;
+        color: $charcoal;
+        display: inline-block;
+        line-height: 1;
+        @include trans(all 0.2s ease-out);
+
+        @media only screen and (min-width: 642px) {
+            top: 95%;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            position: absolute;
+            padding: 0;
+            bottom: -60px;
+            top: initial;
+            left: -40px;
+            right: 0;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            left: 50px;
+        }
+
+        @media only screen and (min-width: 2000px) {
+            left: 150px;
+        }
+
+        &:before {
+            display: inline-block;
+            position: relative;
+            border: 3px solid $cyan;
+            text-align: center;
+            background: white;
+            text-indent: 5px;
+            line-height: 60px;
+            font-size: 20px;
+            margin: 0 0 0 -20px;
+            width: 60px;
+            height: 60px;
+            left: -10px;
+            top: 0;
+            color: $cyan;
+            @include pre(border-radius, 50%);
+            @include trans(all 0.2s ease-out);
+        }
+    }
+
+    .workout-copy {
+        padding-bottom: 50px;
+        text-align: center;
+
+        @media only screen and (min-width: 1025px) {
+            padding-bottom: 70px;
+            text-align: left;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+
+            @media only screen and (min-width: 1025px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .workout-paragraph {
+            @media only screen and (min-width: 1025px) {
+                padding-right: 50px;
+            }
+        }
+    }
+
+    .workout-icons {
+        @media only screen and (min-width: 642px) and (max-width: 1024px) {
+            margin: 0 60px;
+        }
+    }
+
+    p {
+        line-height: 1.75;
+    }
+
+    [class*="block-grid-"] {
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0;
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+
+            &:before {
+                font-size: 56px;
+            }
+
+            &.icon-equipment {
+                color: $cyan;
+            }
+
+            &.icon-time {
+                color: $orange;
+            }
+
+            &.icon-space {
+                color: $red;   
+            }
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1.3;
+            text-transform: uppercase;
+            color: $charcoal;
+        }
+    }
+
+    .icon-fitbit {
+        margin-bottom: 20px;
+    }
+
+    .dark-link {
+        font-size: 14px;
+        color: $charcoal;
+
+        a {
+            color: $charcoal;
+            padding-bottom: 1px;
+            border-bottom: 1px solid $charcoal;
+            @include trans(color 0.3s ease-out, border-bottom 0.3s ease-out);
+
+            &:hover {
+                color: $cyan;
+                border-bottom: 1px solid $cyan;
+            }
+        }
+    }
+}
+
+.results {
+    background: $turqDark;
+
+    .beta,
+    p {
+        color: #fff;
+    }
+
+    .columns:first-child {
+        .beta {
+            margin-bottom: 40px;
+        }
+    }
+
+    .bg-blaze-mobile-device {
+        background: url('../images/bg-blaze-mobile-devices.png') no-repeat;
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 425px) {
+            height: 370px;
+        }
+
+        @media only screen and (min-width: 525px) {
+            width: 475px;
+        }
+
+        @media only screen and (min-width: 1026px) {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    .owl-carousel .owl-wrapper-outer {
+        overflow: visible;
+    }
+}
+
+.action {
+    background: url('../images/bg-blaze-cta.jpg') bottom center no-repeat;
+    height: 250px;
+    background-size: cover;
+
+    @media only screen and (min-width: 425px) {
+        height: 400px;
+    }
+
+    @media only screen and (min-width: 642px) {
+        height: 600px;
+    }
+
+    .cta {
+        position: relative;
+        width: 100%;
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px;
+        color: $greyDark;
+        background: $offWhite;
+        display: none;
+
+        @media only screen and (min-width: 425px) {
+            display: block;
+        }
+
+        a {
+            margin-top: 20px;
+            display: block;
+
+            @media only screen and (min-width: 642px) {
+                margin-left: 20px;
+                display: inline-block;
+            }
+
+            @media only screen and (min-width: 758px) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.mobile-cta {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: $greyDark;
+    background: $offWhite;
+
+    @media only screen and (min-width: 425px) {
+        display: none;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: block;
+    }
+} 

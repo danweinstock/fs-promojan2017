@@ -1,0 +1,56 @@
+/*
+Theme Name: 	Fitstar
+Version: 		5.0
+Author: 		Filament Lab
+Author URI: 	http://www.filamentlab.com
+*/
+
+// RESET & UTILITIES
+// ---------------------------------------------------------
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+$sourceURL:				"..";
+
+// BASE STYLES
+// ---------------------------------------------------------
+@import "_base/_mixins.scss";
+@import "_base/_vars.scss";
+@import "_base/_reset.scss";
+@import "_base/_common.scss";
+@import "_base/_grid.scss";
+@import "_base/_type.scss";
+@import "_base/_buttons.scss";
+@import "_base/_forms.scss";
+
+// VENDOR
+// ---------------------------------------------------------
+@import "_vendor/_webfonts.scss";
+@import "_vendor/_owl-carousel.scss";
+
+// MODULES
+// ---------------------------------------------------------
+@import "_modules/_header.scss";
+@import "_modules/_footer.scss";
+@import "_modules/_panels.scss";
+@import "_modules/_carousel-people.scss";
+@import "_modules/_video.scss";
+
+// REGIONS
+// ---------------------------------------------------------
+@import "_regions/_homepage.scss";
+@import "_regions/_app.scss";
+@import "_regions/_our-team.scss";
+@import "_regions/_community.scss";
+@import "_regions/_press.scss";
+@import "_regions/_blog.scss";
+@import "_regions/_careers.scss";
+@import "_regions/_download.scss";
+@import "_regions/_become-partner.scss";
+@import "_regions/_promotion-landing.scss";
+@import "_regions/_yoga-teaser.scss";
+@import "_regions/_blaze.scss";
+@import "_regions/_signup.scss";

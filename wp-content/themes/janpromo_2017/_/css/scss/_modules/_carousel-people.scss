@@ -1,0 +1,471 @@
+// ==========================================================================
+// PEOPLE - CAROUSEL
+// ==========================================================================
+.carousel-people {
+    position: relative;
+    visibility: hidden;
+    left: -72px;
+    top: 115px;
+    @media screen and (min-width: 375px) {
+        top: 45px;
+    }
+    @media screen and (min-width: $med + px){
+        visibility: visible;
+        right: -60px;
+        // top: 324px;
+        width: 605px;
+        left: inherit;
+    }
+    @media screen and (min-width: $large + px){
+        position: absolute;
+        width: 645px;
+        top: 70px;
+        right: 0px;
+    }
+    @media screen and (min-width: $xlarge + px){
+        width: 675px;
+    }
+    @media screen and (min-width: 1300px) {
+        top: -10px;
+    }
+    .data {
+        float: right;
+        position: absolute;
+        top: 43%;
+        right: -14%;
+        text-align: left;
+        @media screen and (min-width: 540px) {
+            right: 2%;
+        }
+        @media screen and (min-width: $small + px) {
+            right: 0;
+        }
+        @media screen and (min-width: $med + px) {
+        position: absolute;
+        right: -50px;
+        top: 10px;
+        }
+        @media screen and (min-width: $large + px){
+            min-width: 210px;
+            margin-top: 70px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        span,
+        h6 {
+            color: rgba(#fff,.4);
+        }
+        span {
+            font-size: 40px;
+            font-weight: $bold;
+            display: block;
+            padding-bottom: 5px;
+            @media screen and (min-width: $med + px){
+                font-size: 60px;
+            }
+        }
+        h6 {
+            font-size: 11px;
+
+            text-transform: uppercase;
+            i {
+              padding-right: 5px;
+            }
+        }
+    }
+    .people {
+        min-height: 700px;
+        @media screen and (min-width: 480px) and (max-width: $med + px) {
+            position: relative;
+            left: -30px;
+        }
+        [class*=person] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            &.active {
+                @media screen and (max-width: $med + px) {
+                    height: 230px;
+                    width: 330px;
+                    left: 0px;
+                    top: 290px;
+                }
+                .graphic div {
+                    opacity: 1;
+
+                    @include pre(transform, translateX(0));
+                }
+            }
+        }
+        .graphic {
+            background-size: cover !important;
+            height: 450px;
+            @media (min-width: $med + px) {
+                background: none !important;
+                div {
+                    width: 515px;
+
+                    opacity: 0;
+
+                    @include trans(opacity .2s ease-out, transform .2s ease-out);
+                }
+                div:nth-child(odd) {
+                    @include pre(transform, translateX(-50px));
+                }
+                div:nth-child(even) {
+                    @include pre(transform, translateX(50px));
+                }
+                div:nth-child(1) {
+                    height: 200px;
+
+                    transition-delay: .1s;
+                }
+                div:nth-child(2) {
+                    height: 48px;
+
+                    transition-delay: .05s;
+
+                    background-position: 0 -200px !important;
+                }
+                div:nth-child(3) {
+                    height: 48px;
+
+                    background-position: 0 -248px !important;
+                }
+                div:nth-child(4) {
+                    height: 75px;
+
+                    transition-delay: .15s;
+
+                    background-position: 0 -296px !important;
+                }
+                div:nth-child(5) {
+                    height: 32px;
+
+                    background-position: 0 -371px !important;
+                }
+                div:nth-child(6) {
+                    height: 290px;
+
+                    transition-delay: .05s;
+
+                    background-position: 0 -403px !important;
+                }
+            }
+        }
+    }
+    .stats {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 675px;
+        height: 100%;
+        > div {
+            position: absolute;
+
+            padding: 7px 10px;
+            @media screen and (min-width: $med + px){
+              padding: 10px 18px;
+                @include trans(width .2s ease-out);
+            }
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: block;
+
+                min-height: 30px;
+
+                content: '';
+                @media screen and (min-width: $med + px){
+                  min-height: 36px;
+                }
+            }
+            &:not([class*=level]) {
+                &:after {
+                    width: 0;
+                    min-width: 0;
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+                .text {
+                    opacity: 0;
+                }
+            }
+        }
+        .text {
+            position: relative;
+            z-index: 1;
+
+            opacity: 1;
+            @media screen and (min-width: $med + px){
+                @include trans(opacity .2s ease-out);
+            }
+        }
+        span {
+            font-size: 13px;
+            font-weight: $bold;
+
+            text-transform: uppercase;
+
+            color: rgba(#fff,.7);
+        }
+        .arms {
+            top: 404px;
+            padding-left: calc(175px + 18px);
+            @media screen and (min-width: $med + px){
+                top: 164px;
+            }
+            &:after {
+                left: 175px;
+
+                width: calc(100% - 175px);
+                min-width: 270px;
+
+                background: linear-gradient(to right, rgba($persimmon,1) 0%,rgba($persimmon,0) 100%);
+            }
+            .text {
+                min-width: 270px;
+            }
+        }
+        .chest {
+            top: 435px;
+            padding-left: calc(125px + 18px);
+            @media screen and (min-width: $med + px){
+                top: 200px;
+             }
+
+            &:after {
+                left: 125px;
+
+                width: calc(100% - 125px);
+                min-width: 150px;
+
+                background: linear-gradient(to right, rgba($denim,1) 0%,rgba($denim,0) 100%);
+            }
+            .text {
+                min-width: 150px;
+            }
+        }
+        .cardio {
+                top: 465px;
+            padding-left: calc(190px + 18px);
+            @media screen and (min-width: $med + px){
+                top: 236px;
+            }
+
+            &:after {
+                left: 190px;
+
+                width: calc(100% - 190px);
+                min-width: 200px;
+
+                background: linear-gradient(to right, rgba($purple,1) 0%,rgba($purple,0) 100%);
+            }
+            .text {
+                min-width: 160px;
+            }
+        }
+        .core {
+                top: 495px;
+            padding-left: calc(215px + 18px);
+            @media screen and (min-width: $med + px){
+                top: 296px;
+            }
+
+
+            &:after {
+                left: 215px;
+
+                width: calc(100% - 215px);
+                min-width: 200px;
+
+                background: linear-gradient(to right, rgba($mediumRedViolet,1) 0%,rgba($mediumRedViolet,0) 100%);
+            }
+            .text {
+                min-width: 145px;
+            }
+        }
+        .back {
+            top: 525px;
+            padding-left: calc(180px + 18px);
+           @media screen and (min-width: $med + px){
+                top: 332px;
+            }
+
+
+            &:after {
+                left: 180px;
+
+                width: calc(100% - 180px);
+                min-width: 200px;
+
+                background: linear-gradient(to right, rgba($gigas,1) 0%,rgba($gigas,0) 100%);
+            }
+            .text {
+                min-width: 145px;
+            }
+        }
+        .legs {
+            top: 555px;
+            padding-left: calc(150px + 18px);
+            @media screen and (min-width: $med + px){
+                top: 403px;
+            }
+
+
+            &:after {
+                left: 150px;
+
+                width: calc(100% - 150px);
+                min-width: 140px;
+
+                background: linear-gradient(to right, rgba($pacificBlue,1) 0%,rgba($pacificBlue,0) 100%);
+            }
+            .text {
+                min-width: 140px;
+            }
+        }
+        .level-1 {
+            width: 20%;
+        }
+        .level-2 {
+            width: 40%;
+        }
+        .level-3 {
+            width: 60%;
+        }
+        .level-4 {
+            width: 80%;
+        }
+        .level-5 {
+            width: 100%;
+        }
+    }
+    .people-nav {
+        position: absolute;
+        bottom: 0px;
+        right: -60px;
+        @media screen and (min-width: $med + px) and (max-width: $large + px){
+            right: -95px;
+        }
+        @media screen and (min-width: $med + px) {
+            bottom: 125px;
+        }
+        @media screen and (min-width: $large + px) {
+            right: 35px;
+        }
+        [class*=person] {
+            .details {
+                display: none;
+
+                @extend .clearfix;
+                h3 {
+                    @media screen and (max-width: $small + px){
+                        font-size: 18px !important;
+                    }
+                }
+                p {
+                    @media screen and (max-width: $small + px){
+                        font-size: 10px !important;
+                    }
+                    margin-bottom: 20px !important;
+                    font-size: 12px !important;
+                    font-weight: $book !important;
+                }
+            }
+            &.active {
+                .details {
+                    display: block;
+                }
+                a {
+                    height: 7px;
+                    &:after {
+                        width: 100%;
+
+                        background: $persimmon;
+                    }
+                }
+            }
+            &.past {
+                a:after {
+                    width: 100%;
+
+                    background: $persimmon;
+
+                    @include pre(transform, translateX(100%));
+                }
+            }
+        }
+        img {
+            float: left;
+
+            margin-right: 15px;
+
+            border-radius: 50%;
+        }
+        span {
+            float: left;
+
+            margin-top: 10px;
+        }
+        h3 {
+            color: $kimberley;
+        }
+        p {
+            font-size: 12px;
+
+            margin-bottom: 0;
+
+            color: #fff;
+        }
+        a {
+            position: absolute;
+            bottom: 0;
+
+            display: inline-block;
+            overflow: hidden;
+
+            height: 4px;
+
+            background: rgba(255,255,255,.2);
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 0;
+                height: 100%;
+
+                content: '';
+
+                @include trans(width .2s ease-out, transform .2s ease-out);
+            }
+        }
+        i {
+          padding-right: 5px;
+        }
+        // Important css styles relative to how many people there are
+        [class*=person] {
+            @media screen and (min-width: $med + px){
+                a {
+                    left: 0;
+
+                    width: calc(33.333% - 5px);
+                }
+                &:nth-child(2) a {
+                    left: 50%;
+
+                    @include pre(transform, translateX(-50%));
+                }
+                &:last-child a {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+}

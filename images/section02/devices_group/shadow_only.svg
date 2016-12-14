@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="215px" height="23px" viewBox="0 0 215 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shadow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="21.0585937%"></stop>
+            <stop stop-color="#000000" offset="82.9921875%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="8 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-298.000000, -1251.000000)" fill="url(#linearGradient-1)">
+            <g id="Workout-Recco's" transform="translate(-173.000000, 493.000000)">
+                <g id="Feature-1">
+                    <g id="devices_group" transform="translate(286.000000, 338.000000)">
+                        <g id="Shadow" transform="translate(200.210521, 427.953509)">
+                            <path d="M1.91789353,3.30464411 L6.82414237,1.90890246 C7.84296214,1.61906613 9.52617807,1.38410735 10.5849743,1.38410735 L177.368592,1.38410735 C178.426822,1.38410735 180.11249,1.61960286 181.129423,1.90890246 L186.035672,3.30464411 L181.129423,4.70038576 C180.110604,4.9902221 178.427388,5.22518087 177.368592,5.22518087 L10.5849743,5.22518087 C9.52674393,5.22518087 7.84107545,4.98968537 6.82414237,4.70038576 L1.91789353,3.30464411 Z" filter="url(#filter-2)"></path>
+                            <path d="M0,1.92053676 L4.90624884,0.52479511 C5.92506861,0.234958774 7.60828454,0 8.66708073,0 L175.450698,0 C176.508928,0 178.194597,0.235495505 179.21153,0.52479511 L184.117779,1.92053676 L179.21153,3.31627841 C178.19271,3.60611475 176.509494,3.84107352 175.450698,3.84107352 L8.66708073,3.84107352 C7.6088504,3.84107352 5.92318192,3.60557802 4.90624884,3.31627841 L0,1.92053676 Z" filter="url(#filter-3)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

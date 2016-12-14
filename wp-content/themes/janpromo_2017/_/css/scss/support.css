@@ -1,0 +1,492 @@
+@import url("http://fitstar.com/wp-content/themes/fitstar_v4/_/css/style.css");
+.button, #company-support-portal #support-search #support-search-submit {
+  border: none;
+  font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  padding: 17px 55px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .button.cyan, #company-support-portal #support-search #support-search-submit {
+    background: #00aff0; }
+    .button.cyan:hover, #company-support-portal #support-search #support-search-submit:hover {
+      background: #008abd; }
+    .button.cyan.trans, #company-support-portal #support-search .trans#support-search-submit {
+      background: #00aff0;
+      background: rgba(0, 175, 240, 0.8); }
+      .button.cyan.trans:hover, #company-support-portal #support-search .trans#support-search-submit:hover {
+        background: #008abd;
+        background: #00aff0; }
+  .button.cyan-line, #company-support-portal #support-search .cyan-line#support-search-submit {
+    border: 1px solid #00aff0;
+    color: #00aff0;
+    background: #fff; }
+    .button.cyan-line:hover, #company-support-portal #support-search .cyan-line#support-search-submit:hover {
+      background: #00aff0;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .button.green, #company-support-portal #support-search .green#support-search-submit {
+    background: #26ad61; }
+    .button.green:hover, #company-support-portal #support-search .green#support-search-submit:hover {
+      background: #1d834a; }
+  .button.green-line, #company-support-portal #support-search .green-line#support-search-submit {
+    border: 1px solid #26ad61;
+    color: #26ad61; }
+    .button.green-line:hover, #company-support-portal #support-search .green-line#support-search-submit:hover {
+      border: 1px solid #26ad61;
+      background: #26ad61;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .button.greenLight, #company-support-portal #support-search .greenLight#support-search-submit {
+    background: #74C59E; }
+    .button.greenLight:hover, #company-support-portal #support-search .greenLight#support-search-submit:hover {
+      background: #50b685; }
+    .button.greenLight.trans, #company-support-portal #support-search .greenLight.trans#support-search-submit {
+      background: #74C59E;
+      background: rgba(116, 197, 158, 0.8); }
+      .button.greenLight.trans:hover, #company-support-portal #support-search .greenLight.trans#support-search-submit:hover {
+        background: #50b685;
+        background: #74c59e; }
+  .button.greenLight-line, #company-support-portal #support-search .greenLight-line#support-search-submit {
+    border: 1px solid #74C59E;
+    color: #74C59E;
+    background: #fff; }
+    .button.greenLight-line:hover, #company-support-portal #support-search .greenLight-line#support-search-submit:hover {
+      background: #74C59E;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .button.greenDark, #company-support-portal #support-search .greenDark#support-search-submit {
+    background: #198F50; }
+    .button.greenDark:hover, #company-support-portal #support-search .greenDark#support-search-submit:hover {
+      background: #116438; }
+  .button.red, #company-support-portal #support-search .red#support-search-submit {
+    background: #d0233c; }
+    .button.red:hover, #company-support-portal #support-search .red#support-search-submit:hover {
+      background: #a41c2f; }
+  .button.redLight, #company-support-portal #support-search .redLight#support-search-submit {
+    background: #F37463; }
+    .button.redLight:hover, #company-support-portal #support-search .redLight#support-search-submit:hover {
+      background: #ef4a34; }
+  .button.white, #company-support-portal #support-search .white#support-search-submit {
+    color: #00aff0;
+    border: 1px solid #00aff0;
+    background: #fff; }
+  .button.white-line, #company-support-portal #support-search .white-line#support-search-submit {
+    border: 1px solid #fff; }
+    .button.white-line:hover, #company-support-portal #support-search .white-line#support-search-submit:hover {
+      border: 1px solid #00aff0;
+      background: #00aff0;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .button.bg-persimmon, #company-support-portal #support-search .bg-persimmon#support-search-submit {
+    background: #ff5659; }
+    .button.bg-persimmon:hover, #company-support-portal #support-search .bg-persimmon#support-search-submit:hover {
+      background: #ff7072; }
+  .button.bg-pacificBlue, #company-support-portal #support-search .bg-pacificBlue#support-search-submit {
+    background: #00b0ba; }
+    .button.bg-pacificBlue:hover, #company-support-portal #support-search .bg-pacificBlue#support-search-submit:hover {
+      background: #00c8d4; }
+  .button.bg-almostBlack, #company-support-portal #support-search .bg-almostBlack#support-search-submit {
+    background: #1C202C; }
+    .button.bg-almostBlack:hover, #company-support-portal #support-search .bg-almostBlack#support-search-submit:hover {
+      background: #262b3c; }
+
+.best-of-2013-button {
+  display: block;
+  height: 88px;
+  width: 135px;
+  background: url(../images/best-of-2013.png) 0 0 no-repeat;
+  background-size: contain; }
+
+.appstore-button {
+  display: block;
+  height: 40px;
+  width: 135px;
+  background: url(../images/download-from-appstore.png) 0 0 no-repeat;
+  background-size: contain; }
+
+.ribbon-tag {
+  display: inline-block;
+  background: #d0233c;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 50px;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+  .ribbon-tag:hover {
+    background: #a41c2f; }
+
+.download-play-store {
+  background: url(../images/fitstar-google-play-en.png) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 170px;
+  height: 58px; }
+  .smartling-de .download-play-store {
+    background-image: url(../images/fitstar-google-play-de.png); }
+  .smartling-es .download-play-store {
+    background-image: url(../images/fitstar-google-play-es.png); }
+  .smartling-fr .download-play-store {
+    background-image: url(../images/fitstar-google-play-fr.png); }
+  .smartling-pt .download-play-store {
+    background-image: url(../images/fitstar-googe-play-pt.png); }
+
+.download-app-store {
+  background: url(../images/fitstar-app-store-en.png) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 196px;
+  height: 58px; }
+  .smartling-de .download-app-store {
+    background-image: url(../images/fitstar-app-store-de.png); }
+  .smartling-es .download-app-store {
+    background-image: url(../images/fitstar-app-store-es.png); }
+  .smartling-fr .download-app-store {
+    background-image: url(../images/fitstar-app-store-fr.png); }
+  .smartling-pt .download-app-store {
+    background-image: url(../images/fitstar-app-store-pt.png); }
+
+.button-callout,
+.menu-button.button-callout a {
+  color: #ff5659; }
+
+body {
+  background: #212830; }
+
+#company-support-portal {
+  background: #fff;
+  position: relative;
+  z-index: 1; }
+  #company-support-portal #company-header {
+    background: #fff;
+    padding: 0;
+    position: absolute; }
+    #company-support-portal #company-header a {
+      color: #5a5a5a;
+      text-decoration: none;
+      border-bottom: none; }
+      #company-support-portal #company-header a:hover {
+        color: #00aff0;
+        text-decoration: none;
+        border-bottom: none; }
+      #company-support-portal #company-header a.button.cyan, #company-support-portal #company-header #support-search a#support-search-submit, #company-support-portal #support-search #company-header a#support-search-submit {
+        color: #fff; }
+    #company-support-portal #company-header h1 {
+      background: none;
+      float: none;
+      font-size: 48px; }
+  #company-support-portal .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    background: #fff; }
+  #company-support-portal h3 {
+    text-transform: none; }
+  #company-support-portal #social-share {
+    display: none; }
+  #company-support-portal #support-header {
+    border: none;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    #company-support-portal #support-header .wrapper {
+      padding: 120px 0.9375em 140px;
+      max-width: 74em; }
+    #company-support-portal #support-header h2 {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 400;
+      letter-spacing: -1px; }
+      @media only screen and (max-width: 650px) {
+        #company-support-portal #support-header h2 {
+          font-size: 36px; } }
+  #company-support-portal #support-main {
+    margin: 0 auto;
+    max-width: 74em;
+    padding: 0 0.9375em;
+    width: 100%;
+    float: none; }
+    #company-support-portal #support-main h3 {
+      border-bottom: none;
+      margin: 0 0 20px 0;
+      padding: 0;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -1px; }
+      @media only screen and (max-width: 650px) {
+        #company-support-portal #support-main h3 {
+          font-size: 26px; } }
+    #company-support-portal #support-main .content {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    #company-support-portal #support-main .support-body {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 74em;
+      padding: 0 0 1180px 0;
+      border: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none; }
+      @media only screen and (min-width: 641px) {
+        #company-support-portal #support-main .support-body {
+          padding: 0 0 480px 0; } }
+    #company-support-portal #support-main .dashboard td,
+    #company-support-portal #support-main .dashboard .row1 td {
+      border-top: 1px solid #dbdbdb;
+      border-bottom: none;
+      padding: 40px 0; }
+      #company-support-portal #support-main .dashboard td ul,
+      #company-support-portal #support-main .dashboard .row1 td ul {
+        margin: 0; }
+        #company-support-portal #support-main .dashboard td ul li,
+        #company-support-portal #support-main .dashboard .row1 td ul li {
+          margin: 2px 0; }
+    #company-support-portal #support-main .dashboard .topic ul {
+      margin: 0;
+      padding: 0 0 0 15px; }
+      #company-support-portal #support-main .dashboard .topic ul li {
+        font-size: 16px;
+        background: none;
+        list-style: disc;
+        padding: 0; }
+        #company-support-portal #support-main .dashboard .topic ul li a {
+          color: #00aff0; }
+          #company-support-portal #support-main .dashboard .topic ul li a:hover {
+            color: #008abd; }
+  #company-support-portal #support-side {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media only screen and (min-width: 400px) {
+      #company-support-portal #support-side {
+        top: 210px; } }
+    #company-support-portal #support-side .content {
+      margin: 0 auto;
+      max-width: 74em;
+      padding: 0 0.9375em;
+      width: 100%;
+      float: none;
+      text-align: center; }
+    #company-support-portal #support-side h3 {
+      margin: 0 0 5px 0;
+      padding: 0;
+      border: none; }
+    #company-support-portal #support-side ul {
+      padding: 0;
+      width: 100%;
+      margin: 0 0; }
+      @media only screen and (min-width: 400px) {
+        #company-support-portal #support-side ul {
+          width: 80%;
+          margin: 0 10%; } }
+      @media only screen and (min-width: 860px) {
+        #company-support-portal #support-side ul {
+          width: 50%;
+          margin: 0 25%; } }
+    #company-support-portal #support-side p {
+      font-size: 13px;
+      display: inline;
+      margin: 0;
+      padding: 0; }
+    #company-support-portal #support-side li {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      display: inline; }
+      #company-support-portal #support-side li:first-child:after {
+        content: " - "; }
+    #company-support-portal #support-side a {
+      color: #00aff0; }
+      #company-support-portal #support-side a:hover {
+        color: #008abd; }
+  #company-support-portal #support-search {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    max-width: 74em;
+    background: #fbfbfb;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+    #company-support-portal #support-search #support-search-submit {
+      height: 40px;
+      line-height: 40px;
+      padding: 0;
+      text-transform: uppercase;
+      font-weight: normal; }
+    #company-support-portal #support-search #question-mask {
+      height: 40px;
+      line-height: 40px;
+      color: #c0c0c0;
+      width: 82%;
+      top: 0;
+      left: 6px;
+      padding: 0 10px;
+      font-size: 16px;
+      font-weight: normal; }
+    #company-support-portal #support-search.support-search-big .inner {
+      display: block;
+      width: 100%;
+      border: none;
+      height: 40px;
+      padding: 0;
+      background: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none; }
+      #company-support-portal #support-search.support-search-big .inner #q {
+        background: #fff;
+        border: 1px solid #dbdbdb;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        height: 40px;
+        line-height: 40px;
+        width: 82%;
+        margin: 0;
+        padding: 0 10px;
+        -webkit-appearance: none;
+        font-size: 16px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px; }
+      #company-support-portal #support-search.support-search-big .inner #support-search-submit {
+        width: 15%;
+        text-align: center; }
+    #company-support-portal #support-search.support-search-small {
+      position: relative;
+      margin: 0;
+      top: 140px; }
+      #company-support-portal #support-search.support-search-small #q {
+        background: #fff;
+        border: 1px solid #dbdbdb;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        height: 40px;
+        line-height: 40px;
+        width: 82%;
+        margin: 0;
+        padding: 0 10px;
+        -webkit-appearance: none;
+        font-size: 16px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px; }
+      #company-support-portal #support-search.support-search-small #support-search-submit {
+        width: 15%;
+        text-align: center;
+        text-indent: inherit;
+        right: inherit;
+        top: inherit;
+        margin: 0 0 0 3%; }
+  #company-support-portal #breadcrumbs {
+    max-width: 1150px;
+    padding: 0 0.9375em;
+    width: 100%;
+    float: none;
+    text-align: left;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 13px;
+    margin: 0 auto 40px auto; }
+    #company-support-portal #breadcrumbs a {
+      color: #00aff0; }
+      #company-support-portal #breadcrumbs a:hover {
+        color: #008abd; }
+  #company-support-portal .content.article a {
+    color: #00aff0;
+    text-decoration: none; }
+    #company-support-portal .content.article a:hover {
+      color: #008abd;
+      text-decoration: none;
+      border-bottom: none; }
+  #company-support-portal .content.article .meta {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (max-width: 650px) {
+      #company-support-portal .content.article .meta {
+        font-size: 12px; } }
+  #company-support-portal .article-content {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400; }
+    #company-support-portal .article-content ul,
+    #company-support-portal .article-content ol {
+      margin: 0 0 30px 0;
+      padding: 0 0 0 25px; }
+      #company-support-portal .article-content ul li,
+      #company-support-portal .article-content ol li {
+        font-size: 16px;
+        background: none;
+        margin: 3px 0; }
+    #company-support-portal .article-content ul li {
+      list-style: disc; }
+    #company-support-portal .article-content ol li {
+      list-style: decimal; }
+    #company-support-portal .article-content p {
+      margin: 0 0 30px; }
+    #company-support-portal .article-content a {
+      color: #00aff0;
+      text-decoration: none;
+      border-bottom: none; }
+      #company-support-portal .article-content a:hover {
+        color: #008abd;
+        text-decoration: none;
+        border-bottom: none; }
+  #company-support-portal #footer {
+    height: 1180px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; }
+    @media only screen and (min-width: 641px) {
+      #company-support-portal #footer {
+        height: 465px; } }
+    #company-support-portal #footer > br,
+    #company-support-portal #footer > a {
+      display: none; }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="43px" viewBox="0 0 42 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_05_musicNote</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="21" cy="21.1959131" r="21"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-662.000000, -1757.000000)">
+            <g id="center_icons" transform="translate(652.000000, 1112.000000)">
+                <g id="icon_05_musicNote" transform="translate(10.000000, 645.000000)">
+                    <use id="Oval-Copy-3" stroke="#DFDFDF" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <path d="M17.4807007,11.5978938 C16.5829027,11.8493914 15.9636941,12.6505757 15.9636941,13.5621219 L15.9636941,14.6105591 L15.9636941,17.3144235 L15.9636941,24.925144 C14.9668661,24.3298269 13.7251842,24.0868187 12.4116784,24.4094148 C10.751024,24.8179657 9.43643,26.1603474 9.0968991,27.7966736 C8.50054353,30.6713866 10.7379652,33.1959131 13.57936,33.1959131 C16.1062535,33.1959131 18.1564978,31.1966664 18.1575861,28.7305043 L18.1575861,17.7686049 C18.1575861,17.1361468 18.5863527,16.5790318 19.2099142,16.4049997 L27.9506586,13.9547552 C28.8800157,13.6937071 29.8071962,14.3749791 29.8071962,15.3183603 L29.8071962,21.0720311 C28.8103683,20.476714 27.5686864,20.2337058 26.2551806,20.5563018 C24.5945262,20.9648528 23.2799322,22.3061733 22.9404013,23.9424994 C22.3429575,26.8172125 24.5803791,29.3428001 27.4228622,29.3428001 C29.8039315,29.3428001 31.7616754,27.564277 31.9782352,25.2954928 L32,25.2954928 L32,12.8193019 L32,10.9017654 L32,10.2406557 C32,8.88129528 30.6647294,7.90183418 29.3251059,8.27642765 L17.4807007,11.5978938 Z" id="radio-icon" fill="#1C202C" opacity="0.300000012"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

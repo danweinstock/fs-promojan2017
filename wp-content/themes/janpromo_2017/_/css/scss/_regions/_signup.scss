@@ -1,0 +1,279 @@
+.signup {
+    
+    header {
+        display: none;
+        opacity: 0;
+        @include trans(opacity 0.3s ease-out);
+
+        .brand {
+            margin: 10px 15px 15px 0 !important;
+        }
+
+        .sign-up {
+            float: right;
+            margin: 20px 15px 20px 0;
+            background: $turqDark;
+            color: $offWhite;
+            display: inline-block;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 12px;
+            @include trans(background 0.3s ease-out);
+
+            @media only screen and (min-width: 480px) {
+                font-size: 14px;
+            }
+         
+            &:hover {
+                background: darken($turqDark, 10);
+            }
+        }
+
+        &.appear {
+            display: block;
+            position: fixed;
+            opacity: 1;
+        }
+
+        &.video {
+            #signup-button {
+                display: none;
+            }
+        }
+    }
+
+    .discover {
+        padding: 0;
+
+        img, h2 {
+            margin-bottom: 20px;
+        }
+
+        .bg-hero {
+            background: url('../images/bg-signup-hero-kent.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
+            display: block;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 300px;
+
+            @media only screen and (min-width: 768px) {
+                background: url('../images/bg-signup-hero-kent.jpg') center center no-repeat;
+                position: absolute;
+                width: 45%;
+                height: 100%;
+                background-size: cover;
+            }
+            @media only screen and (min-width: 1075px) {
+                width: 53%;
+            }
+        }
+
+        .hero-copy {
+            background-color: #fff;
+            padding: 25px 15px;
+
+            @media only screen and (min-width: 768px) {
+                padding: 50px;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                width: 55%;
+                float: right;
+            }
+            @media only screen and (min-width: 1024px) and (max-width: 1074px) {
+                padding-left: 0;
+            }
+
+            .v-wrapper {
+                min-height: 300px;
+                text-align: center;
+
+                @media only screen and (min-width: 768px) {
+                    min-height: 400px;
+                    text-align: left;
+                }
+            }
+
+            p {
+                color: $bodyColorDark;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        #receiver1 {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    .workout {
+        padding: 30px 0;
+
+        @media only screen and (min-width: 642px) {
+            padding: 75px 0;
+        }
+
+        .beta {
+            margin: 36px 0 18px 0;
+            text-align: center;
+
+            @media only screen and (min-width: 1026px) {
+                text-align: left;
+            }
+        }
+
+        .workout-copy {
+            padding: 0 20px;
+
+            @media only screen and (min-width: 1026px) {
+                padding: 0 20px 0 50px;
+            }
+        }
+
+        .icon-play-arrow {
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            bottom: 0;
+            left: 0;
+            top: initial;
+            right: initial;
+            text-align: center;
+            width: auto;
+
+            @media only screen and (min-width: 1026px) {
+                left: 30px;
+                text-align: left;
+            }
+        }
+    }
+
+    .success-stories {
+        background: url('../images/bg-talent.jpg');
+        background-size: cover;
+        padding-bottom: 0;
+
+        .beta, .talent-copy {
+            color: #fff;
+            margin-bottom: 25px;
+        }
+
+        .trainers {
+            margin-top: 25px;
+        }
+
+        .tweet {
+            @media only screen and (min-width: 1024px) and (max-width: 1150px) {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .has-two-images {
+            @media only screen and (min-width: 1024px) and (max-width: 1150px) {
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .results {
+        filter: transparent;
+    }
+
+    .mobile-cta {
+        display: block;
+        background: #fff;
+        padding: 0;
+
+        @media only screen and (min-width: 426px) {
+            display: none;
+        }
+
+        h2 {
+            @media only screen and (max-width: 1023px) {
+                padding: 20px 0;
+            }
+
+            @media only screen and (min-width: 646px) {
+                font-size: 42px;
+            }
+        }
+
+        #receiver2 {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .footer-cta {
+        background: url('../images/bg-signup-footer.jpg') left center no-repeat;
+        background-size: cover;
+        min-height: 300px;
+
+        @media only screen and (min-width: 426px) {
+            min-height: 650px;
+        }
+
+        @media only screen and (min-width: 646px) {
+            background: url('../images/bg-signup-footer.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .footer-desktop-row {
+            display: none;
+
+            @media only screen and (min-width: 426px) {
+                display: block;
+            }
+        }
+
+        h2 {
+            @media only screen and (max-width: 1023px) {
+                margin-bottom: 30px;
+            }
+
+            @media only screen and (min-width: 646px) {
+                font-size: 42px;
+            }
+        }
+
+        .columns {
+            @media only screen and (min-width: 1024px) {
+                padding: 0 50px;
+            }
+        }
+
+        .iframe-column {
+            padding: 0;
+
+            @media only screen and (min-width: 426px) {
+                padding: 0 20px;
+            }
+
+            iframe {
+                width: 100%;
+                padding: 40px 20px;
+                background-color: #fff;
+
+                @media only screen and (min-width: 646px) {
+                    padding: 40px;
+                }
+            }
+        }
+    }
+}
+
+.ie9 .signup {
+    .icon-play-arrow {
+        display: none !important;
+    }
+}

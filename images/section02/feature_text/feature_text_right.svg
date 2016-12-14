@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="281px" viewBox="0 0 361 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>feature 1 text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-817.000000, -863.000000)">
+            <g id="Workout-Recco's" transform="translate(-173.000000, 493.000000)">
+                <g id="Feature-1">
+                    <g id="feature-1-text" transform="translate(990.000000, 360.000000)">
+                        <text id="Fitstar-and-Fitbit-w" font-family="Gotham-Book" font-size="16" font-weight="300" line-spacing="28" fill="#7F7F7F">
+                            <tspan x="1" y="170">Fitstar and Fitbit work together to make the </tspan>
+                            <tspan x="1" y="198">most of your fitness journey. By syncing your </tspan>
+                            <tspan x="1" y="226">tracker data and activity information, Fitstar </tspan>
+                            <tspan x="1" y="254">provides an even more personalized workout </tspan>
+                            <tspan x="1" y="282">program to ensure you reach your goals.</tspan>
+                        </text>
+                        <text id="Hit-your-goals-faste" font-family="Gotham-Bold" font-size="35" font-weight="bold" line-spacing="42" fill="#1C202C">
+                            <tspan x="0" y="33">Hit your goals faster </tspan>
+                            <tspan x="0" y="75">with recommended </tspan>
+                            <tspan x="0" y="117">workouts.</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

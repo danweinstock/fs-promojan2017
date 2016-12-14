@@ -1,0 +1,12 @@
+{
+  "name": "owl-carousel",
+  "homepage": "https://github.com/OwlFonk/OwlCarousel",
+  "_release": "4460c16a26",
+  "_resolution": {
+    "type": "commit",
+    "commit": "4460c16a26b1bba1309b672c8c7c53cb519aca98"
+  },
+  "_source": "git://github.com/OwlFonk/OwlCarousel.git",
+  "_target": "4460c16a26b1bba1309b672c8c7c53cb519aca98",
+  "_originalSource": "owl-carousel"
+}

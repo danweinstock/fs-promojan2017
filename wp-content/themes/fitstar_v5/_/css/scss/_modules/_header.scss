@@ -1,0 +1,281 @@
+header.global{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 100%;
+	background: $snow;
+
+	@include trans(transform .2s ease-out);
+
+	&.fix {
+		position: fixed;
+		top: auto;
+		bottom: 100%;
+		z-index: 1001;
+		&.visible {
+			@include pre(transform, translateY(100%));
+		}
+	}
+	.nav-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.brand {
+		display: inline-block;
+		position: relative;
+		float: left;
+		padding: 10px;
+		max-width: 160px;
+		-webkit-transition: all 0.75s ease-out;
+		   -moz-transition: all 0.75s ease-out;
+				transition: all 0.75s ease-out;
+
+		@media only screen and (min-width: 480px) {
+			// margin: 16px 0;
+			padding: 20px 10px;
+		}
+		@media screen and (min-width: $med + px){
+			max-width: 220px;
+		}
+	}
+
+	nav {
+		// float: right;
+		@media screen and (min-width: 360px){
+			min-width: 50%;
+			text-align: right;
+		}
+	}
+
+	.menu-main-menu-container {
+		display: inline-block;
+	}
+
+	.menu {
+		li:first-child {
+			display: none;
+			@media screen and (min-width: $med + px) {
+				display: inline-block;
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		display: inline-block;
+		
+		padding: 22px 0;
+		@media screen and (min-width: 360px){
+			padding: 18px 0;
+		}
+
+		@media only screen and (min-width: 480px) {
+			padding: 30px 0;
+		}
+	}
+
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		float: left;
+		font-weight: $bold;
+		a {
+			display: block;
+			line-height: normal;
+			padding-right: 5px;
+			font-size: 11px;
+			@media screen and (min-width: 360px){
+				padding: 5px 8px;
+				font-size: 13px;
+			}
+
+			@media only screen and (min-width: 480px) {
+				padding: 9px 20px;
+			}
+			@media only screen and (min-width: $small + px){
+				font-size: 16px;
+			}
+
+			&:not([class*='button']) {
+				color: $portGore;
+				&:hover {
+					color: $pacificBlue;
+				}
+			}
+		}
+
+		&.store a {
+			display: none;
+
+			@media only screen and (min-width: 600px) {
+				color: $greenLight;
+				margin-right: 15px;
+				display: block;
+			}
+		}
+	}
+
+	&.video {
+		height: 100%;
+		z-index: 100;
+
+		.brand .icon-fitstar {
+			color: #fff !important;
+		}
+
+	}
+
+	&.form {
+		height: 100%;
+		z-index: 100;
+	}
+}
+
+// ==========================================================================
+// BLOG HEADER
+// ==========================================================================
+
+.app-yoga {
+	header {
+		.button-callout {
+			color: $greenLight !important;
+		}
+	}
+}
+// ==========================================================================
+// BLOG HEADER
+// ==========================================================================
+
+header.global.blog-header {
+	ul {
+		padding: 10px 0;
+	}
+}
+
+
+// ==========================================================================
+// VIDEO PLAYER
+// ==========================================================================
+.video-player {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	background: #000;
+
+	&#homepage-video-player {
+		z-index: 400;
+
+		@media only screen and (max-width: 1024px) {
+			position: absolute;
+		}
+	}
+
+	&#inner-video-player {
+		z-index: 10;
+	}
+
+	.player {
+		position: relative;
+		background: #000;
+		padding: 80px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.icon-close {
+		background: #000;
+		background: rgba(23, 35, 34, 0.75);
+		color: #FFFFFF;
+		display: block;
+		height: 30px;
+		line-height: 36px;
+		position: absolute;
+		right: 10px;
+		text-align: center;
+		top: 10px;
+		width: 45px;
+		z-index: 100;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background: $cyan;
+		}
+
+		.video & {
+			top: 90px;
+		}
+	}
+
+	iframe {
+		position: relative;
+		background: #000;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#inner-header-form {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	background: #fff;
+	z-index: -10;
+
+	.header-form {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		padding: 80px;
+
+		@media only screen and (max-width: 650px) {
+			padding: 80px 20px;
+		}
+	}
+
+	.icon-close {
+		background: #000;
+		background: rgba(23, 35, 34, 0.75);
+		color: #fff;
+		display: block;
+		height: 30px;
+		line-height: 36px;
+		position: absolute;
+		right: 10px;
+		text-align: center;
+		top: 10px;
+		width: 45px;
+		z-index: 100;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background: $cyan;
+		}
+
+		.video & {
+			top: 90px;
+		}
+		.form & {
+			top: 90px;
+		}
+	}
+}

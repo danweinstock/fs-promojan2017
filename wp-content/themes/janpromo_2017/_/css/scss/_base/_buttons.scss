@@ -1,0 +1,281 @@
+.button {
+	border: none;
+	font-weight: $bold;
+	display: inline-block;
+	color: #fff;
+	padding: 17px 55px;
+	line-height: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	@include trans(background .3s ease);
+
+	&.cyan {
+		background: $cyan;
+
+		&:hover {
+			background: darken($cyan, 10);
+		}
+
+		&.trans {
+			background: $cyan;
+			background: rgba(0, 175, 240, 0.8);
+
+			&:hover {
+				background: darken($cyan, 10);
+				background: rgba(0, 175, 240, 1.0);
+			}
+		}
+	}
+
+	&.cyan-line {
+		border: 1px solid $cyan;
+		color: $cyan;
+		background: #fff;
+
+		&:hover {
+			background: $cyan;
+			color: #fff;
+			-webkit-transition: all 0.3s ease;
+			   -moz-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+		}
+	}
+
+	&.green {
+		background: $green;
+
+		&:hover {
+			background: darken($green, 10);
+		}
+	}
+
+	&.green-line {
+		border: 1px solid $green;
+		color: $green;
+
+		&:hover {
+			border: 1px solid $green;
+			background: $green;
+			color: #fff;
+			-webkit-transition: all 0.3s ease;
+			   -moz-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+		}
+	}
+
+	&.greenLight {
+		background: $greenLight;
+
+		&:hover {
+			background: darken($greenLight, 10);
+		}
+
+		&.trans {
+			background: $greenLight;
+			background: rgba(116, 197, 158, 0.8);
+
+			&:hover {
+				background: darken($greenLight, 10);
+				background: rgba(116, 197, 158, 1.0);
+			}
+		}
+	}
+
+	&.greenLight-line {
+		border: 1px solid $greenLight;
+		color: $greenLight;
+		background: #fff;
+
+		&:hover {
+			background: $greenLight;
+			color: #fff;
+			-webkit-transition: all 0.3s ease;
+			   -moz-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+		}
+	}
+
+	&.greenDark {
+		background: $greenDark;
+
+		&:hover {
+			background: darken($greenDark, 10);
+		}
+	}
+
+	&.red {
+		background: $red;
+
+		&:hover {
+			background: darken($red, 10);
+		}
+	}
+
+	&.redLight {
+		background: $redLight;
+
+		&:hover {
+			background: darken($redLight, 10);
+		}
+	}
+
+	&.white {
+		color: $cyan;
+		border: 1px solid $cyan;
+		background: #fff;
+	}
+
+	&.white-line {
+		border: 1px solid #fff;
+
+		&:hover {
+			border: 1px solid $cyan;
+			background: $cyan;
+			color: #fff;
+			-webkit-transition: all 0.3s ease;
+			   -moz-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+		}
+	}
+
+	&.bg-persimmon {
+		background: $persimmon;
+		&:hover {
+			background: lighten($persimmon, 5);
+		}
+	}
+	&.bg-pacificBlue {
+		background: $pacificBlue;
+		&:hover {
+			background: lighten($pacificBlue, 5);
+		}
+	}
+	&.bg-almostBlack {
+		background: $almostBlack;
+		&:hover {
+			background: lighten($almostBlack, 5);
+		}
+	}
+}
+
+.best-of-2013-button {
+		display: block;
+		height: 88px;
+		width: 135px;
+		background: url(#{$sourceURL}/images/best-of-2013.png) 0 0 no-repeat;
+		background-size: contain;
+}
+
+.appstore-button {
+	display: block;
+	height: 40px;
+	width: 135px;
+	background: url(#{$sourceURL}/images/download-from-appstore.png) 0 0 no-repeat;
+	background-size: contain;
+}
+
+.ribbon-tag {
+	display: inline-block;
+	background: $red;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 50px;
+	font-size: 16px;
+	font-weight: $medium;
+	@include trans(background 0.2s ease);
+
+	&:hover {
+		background: darken($red, 10);
+	}
+}
+
+.download-play-store {
+	background: url(../images/fitstar-google-play-en.png) 0 0 no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 170px;
+	height: 58px;
+
+	.smartling-de & {
+		background-image: url(../images/fitstar-google-play-de.png);
+	}
+	.smartling-es & {
+		background-image: url(../images/fitstar-google-play-es.png);
+	}
+	.smartling-fr & {
+		background-image: url(../images/fitstar-google-play-fr.png);
+	}
+	.smartling-pt & {
+		background-image: url(../images/fitstar-googe-play-pt.png);
+	}
+
+	// &.small {
+	// 	width: 135px;
+	// 	height: 45px;
+	// 	background: url(../images/button-play-store-sm.png) 0 0 no-repeat;
+	// 	background-size: contain;
+
+
+
+	// 	.smartling-de & {
+	// 		background-image: url(../images/button-play-store-sm-de.png);
+	// 	}
+	// 	.smartling-es & {
+	// 		background-image: url(../images/button-play-store-sm-es.png);
+	// 	}
+	// 	.smartling-fr & {
+	// 		background-image: url(../images/button-play-store-sm-fr.png);
+	// 	}
+	// 	.smartling-pt & {
+	// 		background-image: url(../images/button-play-store-sm-pt.png);
+	// 	}
+	// }
+}
+
+.download-app-store {
+	background: url(../images/fitstar-app-store-en.png) 0 0 no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 196px;
+	height: 58px;
+
+	.smartling-de & {
+		background-image: url(../images/fitstar-app-store-de.png);
+	}
+	.smartling-es & {
+		background-image: url(../images/fitstar-app-store-es.png);
+	}
+	.smartling-fr & {
+		background-image: url(../images/fitstar-app-store-fr.png);
+	}
+	.smartling-pt & {
+		background-image: url(../images/fitstar-app-store-pt.png);
+	}
+
+	// &.small {
+	// 	width: 152px;
+	// 	height: 45px;
+	// 	background: url(../images/button-app-store-sm.png) 0 0 no-repeat;
+	// 	background-size: contain;
+
+	// 	.smartling-de & {
+	// 		background-image: url(../images/button-app-store-sm-de.png);
+	// 	}
+	// 	.smartling-es & {
+	// 		background-image: url(../images/button-app-store-sm-es.png);
+	// 	}
+	// 	.smartling-fr & {
+	// 		background-image: url(../images/button-app-store-sm-fr.png);
+	// 	}
+	// 	.smartling-pt & {
+	// 		background-image: url(../images/button-app-store-sm-pt.png);
+	// 	}
+	// }
+}
+
+.button-callout,
+.menu-button.button-callout a {
+	color: $persimmon;
+}

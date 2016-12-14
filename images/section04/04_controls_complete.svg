@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="612px" height="56px" viewBox="0 0 612 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Controls</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.02418286%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#186AAF" offset="0%"></stop>
+            <stop stop-color="#414598" offset="34.8692602%"></stop>
+            <stop stop-color="#6E1EAA" offset="68.0066167%"></stop>
+            <stop stop-color="#C02F7C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="13" width="608" height="4" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="539" cy="14" r="14"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter3" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter3" in2="SourceAlpha" operator="out" result="shadowBlurOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-597.000000, -2691.000000)">
+            <g id="04_Moves_Personalization" transform="translate(-406.000000, 1947.000000)">
+                <g id="Moves" transform="translate(563.000000, 292.000000)">
+                    <g id="Controls" transform="translate(441.000000, 457.000000)">
+                        <g id="Slider" transform="translate(1.000000, 0.000000)">
+                            <g id="Rectangle-9-Copy-4">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <rect id="Rectangle" fill-opacity="0.5" fill="#FFFFFF" x="166" y="13" width="2" height="4"></rect>
+                            <rect id="Rectangle-Copy" fill-opacity="0.5" fill="#FFFFFF" x="445" y="13" width="2" height="4"></rect>
+                            <rect id="Rectangle-Copy-2" fill-opacity="0.5" fill="#FFFFFF" x="537" y="13" width="2" height="4"></rect>
+                            <g id="Handle">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use stroke-opacity="0.101987092" stroke="#000000" stroke-width="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                        </g>
+                        <g id="Labels" transform="translate(0.000000, 34.000000)" font-size="13" font-family="Gotham-Bold" line-spacing="21" fill="#FFFFFF" font-weight="bold">
+                            <text id="BEGINNER">
+                                <tspan x="0" y="12">BEGINNER</tspan>
+                            </text>
+                            <text id="INTERMEDIATE">
+                                <tspan x="260" y="12">INTERMEDIATE</tspan>
+                            </text>
+                            <text id="EXPERT">
+                                <tspan x="556" y="12">EXPERT</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

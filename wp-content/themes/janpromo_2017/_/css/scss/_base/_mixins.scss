@@ -1,0 +1,18 @@
+//----------------------------------------------------------------
+//	Transition
+//----------------------------------------------------------------
+@mixin trans($effect...) {
+	-webkit-transition: $effect;
+   	   -moz-transition: $effect;
+			transition: $effect;
+}
+
+//----------------------------------------------------------------
+//	Browser Pre-Fix
+//----------------------------------------------------------------
+@mixin pre($attr, $value) {
+	-webkit-#{$attr}: $value;
+   	   -moz-#{$attr}: $value;
+   	    -ms-#{$attr}: $value;
+			#{$attr}: $value;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="629px" viewBox="0 0 1366 629" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0A7D93" offset="0%"></stop>
+            <stop stop-color="#00394B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.949999988">
+        <g id="January-Promo" fill="url(#linearGradient-1)">
+            <g id="Hero" transform="translate(0.000000, -272.000000)">
+                <g id="Hero-bg" transform="translate(0.000000, 223.000000)">
+                    <rect id="Rectangle-11" transform="translate(698.000000, 404.000000) scale(1, -1) translate(-698.000000, -404.000000) " x="0.5" y="47" width="1395" height="714"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "name": "Fitstar",
+  "version": "0.4.0",
+  "authors": [
+    "jstnkrr <justin@undefined.ca>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.2",
+    "isMobile": "~0.4.0",
+    "js-cookie": "~2.1.0",
+    "owl-carousel": "#4460c16a26b1bba1309b672c8c7c53cb519aca98",
+    "jquery-validation": "jquery-validate#^1.15.0"
+  }
+}

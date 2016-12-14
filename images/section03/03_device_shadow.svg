@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="612px" height="22px" viewBox="0 0 612 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>03_device_shadow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="5.14925036%"></stop>
+            <stop stop-color="#000000" offset="95.9368226%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.8" offset="5.14925036%"></stop>
+            <stop stop-color="#000000" offset="49.9668084%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.8" offset="95.9368226%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="40 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-754.000000, -1918.000000)">
+            <g id="03_Features-Vertical-Scroll" transform="translate(160.000000, 1474.000000)">
+                <g id="03_device_shadow" transform="translate(669.000000, 453.000000)">
+                    <path d="M40.4244929,0.552022027 L633.069377,0.552022027 C634.301045,0.552022027 667.128143,1.17144462 667.128143,1.93207709 C667.128143,2.69426046 621.572924,3.86415419 620.337923,3.86415419 L53.155946,3.86415419 C51.9242772,3.86415419 0,2.69270957 0,1.93207709 C0,1.16989373 39.189492,0.552022027 40.4244929,0.552022027 Z" id="Shadow" fill-opacity="0.5" fill="url(#linearGradient-1)" filter="url(#filter-2)"></path>
+                    <path d="M65.8873991,0 L613.972197,0 C615.203866,0 660.762416,0.619422589 660.762416,1.38005507 C660.762416,2.14223843 615.207198,2.76011013 613.972197,2.76011013 L65.8873991,2.76011013 C64.6557304,2.76011013 19.0971797,2.14068754 19.0971797,1.38005507 C19.0971797,0.617871699 64.6523982,0 65.8873991,0 Z" id="Shadow" fill="url(#linearGradient-3)" filter="url(#filter-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

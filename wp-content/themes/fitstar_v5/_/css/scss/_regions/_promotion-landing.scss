@@ -1,0 +1,1834 @@
+body.single-promo {
+
+	h1,
+	.alpha {
+		font-size: 35px;
+
+		@media only screen and (min-width: 1025px) {
+			font-size: 48px;
+		}
+	}
+
+	h2,
+	.beta {
+		font-size: 30px;
+
+		@media only screen and (min-width: 1025px) {
+			font-size: 35px;
+		}
+	}
+
+// ==========================================================================
+// COMMON 
+// ==========================================================================
+	$bodyColorDark: #6D6D6D;
+
+	h1,
+	.alpha {
+		line-height: 1.2;
+	}
+
+	h3 {
+		text-transform: none;
+	}
+
+	p.punch {
+		color: $bodyColorDark;
+	}
+
+	.button {
+		font-size: 14px;
+	}
+
+	.bg-offWhite {
+		background-color: #FBFBFB;
+	}
+
+	.headshot {
+		position: relative;
+		display: inline-block;
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding: 0;
+		-webkit-border-radius: 50%;
+		   -moz-border-radius: 50%;
+				border-radius: 50%;
+		-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+		
+		&:before {
+			display: none;
+		}
+
+		@media only screen and (min-width: 651px) {
+			width: 136px;
+			height: 136px;
+
+			img {
+				width: 136px;
+				height: auto;
+			}
+		}
+	}
+
+	.icon-play-arrow {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: $bold;
+		position: relative;
+		color: $pacificBlue;
+		margin: 5px 0;
+		padding: 65px 0 0 0;
+		display: inline-block;
+		line-height: 1;
+		@include trans(all 0.2s ease);
+
+		@media only screen and (min-width: 651px) {
+			padding: 32px 0 32px 90px;
+		}
+
+		&:before {
+			display: inline-block;
+			@include pre(border-radius, 50%);
+			position: absolute;
+			text-align: center;
+			color: #fff;
+			background: $pacificBlue;
+			@include trans(all 0.2s ease);
+			text-indent: 3px;
+			line-height: 42px;
+			font-size: 15px;
+			margin: 0 0 0 -24px;
+			width: 40px;
+			height: 40px;
+			left: 50%;
+			top: 0;
+
+			@media only screen and (min-width: 651px) {
+				text-indent: 8px;
+				line-height: 70px;
+				font-size: 22px;
+				margin: -38px 0 0 0;
+				width: 68px;
+				height: 68px;
+				left: 0;
+				top: 50%;
+			}
+		}
+
+		&:hover {
+			color: lighten($pacificBlue, 10);
+			
+		}
+
+		&.center-video {
+			position: absolute;
+			padding: 0;
+			z-index: 2;
+			color: #fff;
+			left: 0;
+			top: 0;
+
+			&:before {
+				position: absolute;
+				display: block;
+				font-size: 24px;
+				border: 4px solid #fff;
+				background: #fff;
+				background: rgba(255, 255, 255, 0.3);
+				margin: -38.5px 0 0 -38.5px;
+				width: 69px;
+				height: 69px;
+				line-height: 74px;
+				left: 50%;
+				top: 50%;
+
+				@media only screen and (min-width: 651px) {
+					font-size: 38px;
+					margin: -63.5px 0 0 -63.5px;
+					width: 119px;
+					height: 119px;
+					line-height: 123px;
+				}
+			}
+
+			&:hover {
+				color: rgba(255,255,255,0.6);
+				
+				&:before {
+					border: 4px solid rgba(255,255,255,0.6);
+				}
+			}
+		}
+	}
+
+// ==========================================================================
+// HEADER 
+// ==========================================================================
+	header.global.promo {
+		// position: fixed;
+		// z-index: 999;
+		// left: 0;
+		// right: 0;
+		// display: block;
+		// width: 100%;
+		// top: 0;
+
+		// @media only screen and (min-width: 480px) {
+		// 	padding: 0 0 4px 0;
+		// }
+
+		.brand {
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin: 6px 0 0 0;
+			padding: 10px 10px 10px 0;
+			-webkit-transition: all 0.75s ease-out;
+			   -moz-transition: all 0.75s ease-out;
+					transition: all 0.75s ease-out;
+
+			@media only screen and (min-width: 480px) {
+				margin: 0 0 3px 0;
+			}
+
+			.icon-fitstar {
+				color: $charcoal;
+				font-size: 9px;
+				left: 0;
+
+				@media only screen and (min-width: 480px) {
+					font-size: 18px;
+				}
+			}
+
+			.icon-star {
+				color: $red;
+				font-size: 21px;
+				right: -5px;
+				top: 3px;
+
+				@media only screen and (min-width: 480px) {
+					font-size: 34px;
+				}
+			}
+
+			.icon-fitstar,
+			.icon-star {
+				position: relative;
+				-webkit-transition: color 0.2s ease-out;
+				   -moz-transition: color 0.2s ease-out;
+						transition: color 0.2s ease-out;
+
+				&:hover {
+					color: $redDark;
+				}
+			}
+		}
+
+		.sign-up {
+			float: right;
+			font-weight: $medium;
+			text-transform: uppercase;
+			padding: 8px 18px 9px;
+			font-size: 9px;
+			margin: 16px 0;
+
+			@media only screen and (min-width: 480px) {
+				font-size: 14px;
+				margin: 16px 0 0 0;
+			}
+		}
+	}
+
+// ==========================================================================
+// HEROS
+// ==========================================================================
+.hero {
+	top: 60px;
+	margin: 0;
+	height: auto;
+	background-position: 50% 80%;
+
+	* {
+		z-index: 2;
+	}
+
+	@media only screen and (min-width: 480px) {
+		top: 68px;
+		margin: 0 0 68px 0;
+	}
+
+	.button {
+		margin-top: 5%;
+	}
+
+	.inner-banner {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		bottom: 0;
+		z-index: 6;
+		margin: 60px 0 0 0;
+
+		@media only screen and (min-width: 768x) {
+			margin: 80px 0 0 0;
+		}
+
+		a {
+			display: block;
+			background: rgba(28,32,44,0.75);
+			// @include trans(background 0.3s ease);
+			padding: 25px 0;
+
+			// &:hover {
+			// 	background: #000;
+			// 	background: rgba(0,0,0,0.5);
+			// }
+
+			p, span {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 5px 12px;
+			}
+
+		}
+	}
+}
+
+.hero-v1 {
+	padding: 120px 0 160px;
+
+	&.overlay:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #333333;
+		background: rgba(28, 32, 44,0.80);
+		z-index: 1;
+		top: 0;
+		left: 0;
+	}
+}
+
+.hero-v2 {
+	padding: 30px 0 0;
+	margin: 0 0 60px 0;
+
+	@media only screen and (min-width: 480px) {
+		padding: 80px 0 0;
+		margin: 0 0 68px 0;
+	}
+
+	&.cta-added {
+		padding: 30px 0 190px;
+	}
+
+	.v-wrapper {
+		height: 110px;
+
+		span {
+			font-size: 30px;
+			color: #fff;
+			padding: 0 24px;
+			vertical-align: middle;
+		}
+	}
+
+	&.overlay:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #101010;
+		background: rgba(28, 32, 44,0.80);
+		z-index: 1;
+		top: 0;
+		left: 0;
+	}
+	 img {
+	 	max-width: 190px;
+	 }
+	@media only screen and (max-width: 641px) {
+
+		img {
+			max-width: 120px;
+		}
+	}
+	// p {
+	// 	padding-bottom: 40px;
+	// }
+}
+
+.hero.hero-v3 {
+	padding: 120px 0;
+	background-position: top center;
+	position: relative;
+
+	.small-background-image {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		height: auto;
+		width: auto;
+		z-index: 4;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba(28, 32, 44,0.80);
+			display: block;
+			width: auto;
+			height: auto;
+			z-index: 2;
+		}
+	
+
+		@media only screen and (min-width: 641px) {
+			display: none;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(28, 32, 44,0.80);
+		display: block;
+		width: auto;
+		height: auto;
+		z-index: 2;
+	}
+
+
+	.row {
+		position: relative;
+		z-index: 4;
+	}
+
+	@media only screen and (min-width: 1280px) and (min-height: 1000px) {
+		padding: 180px 0;
+	}
+
+	img {
+		max-width: 70%;
+		margin: 0 auto 20px auto;
+
+		@media only screen and (min-width: 540px) {
+			max-width: 58%;
+		}
+
+		@media only screen and (min-width: 641px) {
+			max-width: 90%;
+		}
+	}
+
+	h1,
+	.alpha {
+		margin: 0;
+		font-size: 35px;
+	}
+
+	.white-text {
+		color: #fff;
+	}
+
+	.black-text {
+		color: $charcoal;
+	}
+}
+
+
+.subhero-v1,
+.subhero-v2,
+.subhero-v3 {
+	border-bottom: 1px solid $greyBorder;
+}
+
+.subhero-v1 {
+	overflow: visible;
+	padding: 40px 0;
+
+	&.has-image {
+		padding: 90px 0 40px;
+
+		@media only screen and (min-width: 651px) {
+			padding: 130px 0 40px;
+
+			.headshot {
+				margin: -56px 0 0 -70px;
+				width: 140px;
+				height: 140px;
+
+				img {
+					width: 136px;
+				}
+			}
+		}
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.button {
+		margin: 25px 0 0 0;
+	}
+
+	.headshot {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin: -46px 0 0 -55px;
+		border: 2px solid #fff;
+		width: 110px;
+		height: 110px;
+
+		img {
+			width: 106px;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+
+// ==========================================================================
+// Subhero V2
+// ==========================================================================
+.subhero-v2 {
+	position: relative;
+	padding: 0 0 30px 0;
+
+	@media only screen and (min-width: 641px) {
+		padding: 65px 0;
+	}
+	
+	.panel-image {
+		overflow: hidden;
+		margin: 0 0 25px 0;
+		height: 200px;
+
+		@media only screen and (min-width: 641px) {
+			position: absolute;
+			width: 48%;
+			height: auto;
+			top: 0;
+			margin: 0;
+		}
+
+		img {
+			max-width: none;
+			min-height: 100%;
+			min-width: 100%;
+		}
+	}
+
+	&.image-right {
+
+		.panel-image {
+			right: 0;
+		}
+	}
+
+	&.image-left {
+
+		.panel-image {
+			right: 0;
+
+			@media only screen and (min-width: 641px) {
+				left: 0;
+			}
+		}
+	}
+
+	h2,
+	.image-icon {
+		margin: 0 0 15px 0;
+	}
+
+	.image-icon {
+		height: 50px;
+		width: auto;
+	}
+}
+
+
+// ==========================================================================
+// Subhero V3
+// ==========================================================================
+.subhero-v3 {
+	padding: 0 0 32px;
+	position: relative;
+
+	h2 {
+		line-height: 1.37;
+		margin: 0 0 24px 0;
+	}
+
+	.video-preview {
+		position: relative;
+		overflow: hidden;
+		height: 230px;
+		width: 100%;
+		margin: 0 auto 36px;
+		background: url('../images/promo_landing/hero-3-subsection.jpg') no-repeat 30% 0;
+		background-size: cover;
+
+		img {
+			width: auto;
+			max-width: none;
+			height: 100%;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			display: block;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background: #00AFF0;
+			background: rgba(0,175,240, 0.35);
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+	}
+
+	@media only screen and (min-width: 642px) {
+		height: 550px;
+		padding: 0 0 40px;
+
+		.video-preview {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 53%;
+			float: left;
+			height: 100%;
+			margin: 0;
+		}
+
+		.v-wrapper {
+			height: 550px;
+		}
+	}
+
+	@media only screen and (min-width: 1025px) {
+
+		.video-preview {
+			width: 61.66667%;
+		}
+	}
+
+	@media only screen and (min-width: 1254px) {
+		max-height: 500px;
+
+		.v-wrapper {
+			height: 500px;
+		}
+	}
+
+	@media only screen and (min-width: 1400px) {
+
+		.video-preview {
+			width: 58%;
+		}
+	}
+}
+
+
+// ==========================================================================
+// APP INFO
+// ==========================================================================
+.app-info {
+	padding: 44px 0;
+	border-top: 1px solid #DBDBDB;
+	border-bottom: 1px solid #DBDBDB;
+
+	h3.beta {
+		margin: 36px 0 18px 0;
+	}
+
+	.punch {
+		border-bottom: 1px solid #DBDBDB;
+		margin: 0 0 25px 0;
+		padding: 0 0 25px 0;
+	}
+
+	@media only screen and (max-width: $verysmall) {
+
+		h3.beta {
+			margin: 26px 0 14px 0;
+		}
+	}
+}
+
+
+// ==========================================================================
+// DEVICE SUB HERO
+// ==========================================================================
+.device-sub-hero {
+	background: $navyDark;
+	overflow: visible;
+	position: relative;
+	z-index: 2;
+	padding: 0;
+
+	.beta {
+		color: #fff;
+	}
+
+	.row {
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 110px;
+
+		@media only screen and (min-width: 641px) {
+			padding-top: 0;
+			padding-bottom: 0;
+
+			.v-wrapper {
+				height: 280px;
+			}
+		}
+
+		@media only screen and (min-width: 1025px) {
+			.v-wrapper {
+				height: 340px;
+			}
+
+			.button {
+				font-size: 20px;
+				padding: 16px 26px;
+			}
+		}
+
+		&:before {
+			display: block;
+			width: 100%;
+			height: 130px;
+			background: url(../images/landing-page-devices.png) no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: -60px;
+
+			@media only screen and (min-width: 641px) {
+				width: 45%;
+				left: 2.5%;
+				top: 30px;
+				bottom: 30px;
+				height: auto;
+			}
+
+			@media only screen and (min-width: 1025px) {
+				width: 45%;
+				left: 0;
+				top: -80px;
+				bottom: 0;
+				height: auto;
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// VIDEO / LIST SPLIT
+// ==========================================================================
+.video-list-split {
+	padding: 0;
+	position: relative;
+
+	> .row {
+		position: relative;
+		z-index: 2;
+	}
+
+	.background-image {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 320px;
+		display: block;
+		margin: 0;
+
+		@media only screen and (min-width: 641px) {
+			right: 50%;
+			margin: 0 50px 0 0;
+			top: 0;
+			bottom: 0;
+			height: auto;
+		}
+
+		@media only screen and (min-width: 1025px) {
+			margin: 0 99px 0 0;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			background: rgba(51,51,51,0.9);
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 130px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: auto;
+			height: auto;
+			background: rgba(16,16,16,0.3);
+			z-index: 2;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	h2 {
+		margin: 0 0 15px 0;
+
+		@media only screen and (min-width: 1025px) {
+			margin: 0 0 40px 0;
+		}
+	}
+
+	.large-5 {
+		height: 320px;
+	}
+	
+	@media only screen and (min-width: 641px) {
+
+		.column,
+		.column.large-5 {
+			height: 560px;
+		}
+	}
+
+	.trainer {
+		position: absolute;
+		left: 50%;
+		top: 40px;
+		padding: 0 120px 0 0;
+		width: 240px;
+		margin: 0 0 0 -120px;
+
+		@media only screen and (min-width: 1025px) {
+			left: inherit;
+			right: 10px;
+			padding: 0 200px 0 0;
+			width: auto;
+			margin: 0;
+			top: 100px;
+		}
+
+		img {
+			position: absolute;
+			right: 0;
+			top: 2px;
+			width: 100px;
+			height: auto;
+
+			@media only screen and (min-width: 1025px) {
+				width: 180px;
+				top: -40px;
+			}
+		}
+
+		h5 {
+			font-weight: $medium;
+			margin: 0;
+			padding: 40px 0 5px 0;
+			position: relative;
+
+			&.icon-star:before {
+				position: absolute;
+				top: 0;
+				font-size: 25px;
+			}
+
+			&.icon-star:before {
+				left: inherit;
+				right: 0;
+				color: $red;
+			}
+		}
+
+		h5,
+		p {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	.large-5 {
+		position: relative;
+
+		> div {
+			position: relative;
+			z-index: 2;
+		}
+
+		.video-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 20px 0;
+			text-align: center;
+		}
+	}
+
+	.large-6 {
+		padding-top: 90px;
+		padding-bottom: 30px;
+	}
+
+	li {
+		padding-left: 40px;
+		position: relative;
+
+		@media only screen and (min-width: 1025px) {
+			font-size: 20px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #BE1F35;
+			position: absolute;
+			left: 12px;
+			top: 12px;
+
+			@media only screen and (min-width: 1025px) {
+				top: 9px;
+			}
+		}
+		
+		@media only screen and (min-width: 1025px) {
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// TALENT
+// ==========================================================================
+	.talent {
+		background: url(../images/trainer-bg.jpg) no-repeat 50% 70%;
+		background-size: cover;
+		padding: 50px 0 330px;
+
+		&.bg-white {
+			background-image: none;
+			background-color: #fff;
+
+			.beta, 
+			.punch {
+				color: $charcoal;
+			}
+
+			@media only screen and (min-width: 642px) {
+
+				.trainerContainer * {
+					color: $charcoal;
+				}
+			}
+		}
+
+		@media only screen and (min-width: 642px) {
+			padding: 76px 0 24px;
+			height: 465px;
+		}
+
+		.beta, 
+		.punch {
+			color: #fff;
+		}
+
+		.beta {
+			line-height: 1.3;
+			margin: 0 0 24px 0;
+		}
+		.large-5 {
+			@media screen and (min-width: $large + px){
+				width: 43%;
+			}
+		}
+		.trainers {
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 330px;
+			top: auto;
+			left: 0;
+			bottom: 0;
+
+			@media only screen and (min-width: 642px) {
+			    bottom: -40px;
+			    height: auto;
+			    left: inherit;
+			    right: 57%;
+			    top: 20%;
+			    width: 43%;
+			}
+
+			@media only screen and (min-width: 1026px) {
+				top: 9%;
+				right: 52%;
+			}
+		}
+
+		.trainerContainer {
+			display: block;
+			position: absolute;
+			z-index: 4;
+
+			h5 {
+				font-weight: $medium;
+				margin: 0;
+				padding: 34px 0 5px 0;
+				position: relative;
+
+				&.icon-star:before,
+				&.icon-yoga-star:before {
+					position: absolute;
+					top: 0;
+					font-size: 25px;
+				}
+
+				&.icon-star:before {
+					left: 0;
+					right: inherit;
+					color: $red;
+				}
+
+				&.icon-yoga-star:before {
+					color: $greenLight;
+					right: 0;
+				}
+			}
+
+			h5,
+			p {
+				color: #fff;
+				font-size: 14px;
+			}
+
+			p {
+				margin: 0 0 15px 0;
+			}
+
+			@media only screen and (max-width: 641px) {
+				position: absolute;
+				top: initial;
+				margin: 0;
+				width: 50%;
+				display: inline-block;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.6);
+				padding: 14px 20px 14px 14px;
+				height: 126px;
+			}
+		}
+
+		@media only screen and (max-width: 380px) {
+
+			.beta {
+				width: 100%;
+				margin-left: 0;
+				text-align: center;
+			}
+		}
+
+		&.tony-tara {
+
+			.trainers {
+				background: url(../images/trainers.png) center center no-repeat;
+				
+				background-size: auto 100%;
+				z-index: 5;
+
+				@media only screen and (min-width: 642px) {
+					background-position: 53% bottom;
+					background-size: auto 100%;
+					bottom: 0;
+
+				}
+
+				@media only screen and (min-width: 1026px) {
+					background-position: 100% 60px;
+					background-size: auto;
+					
+				}
+			}
+
+			.trainerContainer {
+
+				h5 {				
+					&.icon-star:before {
+						right: 0; 
+
+						@media only screen and (min-width: 642px) {
+							left: 0;
+							right: inherit;
+						}
+						@media only screen and (min-width: 1026px) {
+							right: 0;
+							left: inherit;
+						}
+					}
+
+					&.icon-yoga-star:before {
+						left: 0; 
+						
+						@media only screen and (min-width: 642px) {
+							right: 0;
+							left: inherit;
+						}
+						@media only screen and (min-width: 714px) {
+							left: 0;
+							right: inherit;
+						}
+					}
+				}
+
+				&.pt {
+				    left: 0;
+				    text-align: right;
+
+				    &:after {
+				    	content: "";
+				    	position: absolute;
+						height: 70%;
+						top: 15%;
+						width: 1px;
+						background: #fff;
+						background: rgba(255, 255, 255, 0.6);
+						right: 0;
+				    }
+
+					@media only screen and (min-width: 642px) {
+					    text-align: left;
+					    margin: 0 -148px 0 0;
+				    	right: 53%;
+						top: -50px;
+						width: 130px;
+						left: initial;
+
+						&:after {
+							display: none;
+						}
+					}
+					@media only screen and (min-width: 1158px) {
+						width: 100%;
+					}
+					@media only screen and (min-width: 1026px) {
+						text-align: right;
+						margin: 0 364px 0 0;
+						right: 0;
+						top: 2%;
+						width: 26%;
+					}
+				}
+
+				&.yoga {
+					right: 0;
+					text-align: left;
+					padding: 14px 14px 14px 20px;						
+
+					@media only screen and (min-width: 642px) {
+						bottom: 10%;
+						text-align: right;
+						right: 34%;
+						padding: 0;
+					}
+
+					@media only screen and (min-width: 714px) {
+						text-align: left;
+						bottom: 13%;
+						right: 53%;
+						margin: 0 -390px 0 0;
+						width: auto;
+					}
+
+					@media only screen and (min-width: 1026px) {
+						right: 0;
+						margin: 0 -240px 0 0;
+						bottom: 15%;
+					}
+				}
+			}
+		}
+
+		&.tony {
+
+			.trainers {
+				background: url(../images/trainer-bg.jpg) center center no-repeat;
+				background-size: auto 100%;
+
+				@media only screen and (min-width: 642px) {
+					background-position: 53% bottom;
+					background-size: auto 100%;
+				}
+
+				@media only screen and (min-width: 1026px) {
+					background-position: 60% 5px;
+					background-size: auto;
+				}
+			}
+
+			.trainerContainer {
+
+				h5 {
+					&.icon-star:before {
+						right: 0;
+					}
+
+					@media only screen and (max-width: 641px) {
+						padding-top: 4px;
+	
+						&.icon-star:before {
+							display: inline-block;
+							position: relative;
+							vertical-align: middle;
+							margin: 0 8px 0 0;
+						}
+					}
+				}
+
+				&.pt {
+					width: 100%;
+					right: 0;
+					height: auto;
+					bottom: 0;
+					text-align: center;
+					padding-bottom: 4px;
+					top: initial;
+
+					@media only screen and (min-width: 642px) {
+					    text-align: right;
+					    margin: 0 0 0 0;
+					    top: -20px;
+					    width: 130px;
+					    right: 50%;
+					}
+					@media only screen and (min-width: 1026px) {
+						margin: 0 30px 0 0;
+						top: 54px;
+						width: auto;
+						right: 50%;
+					}
+				}
+			}
+		}
+
+		&.tara {
+
+			.trainers {
+				background: url(../images/promo_landing/tara-trainer.png) center center no-repeat;
+				background-size: auto 100%;
+
+				@media only screen and (min-width: 642px) {
+				    width: 58%;
+				}
+				
+				@media only screen and (min-width: 651px) {
+					background-position: 83% bottom;
+					background-size: auto 100%;
+				}
+
+				@media only screen and (min-width: 1026px) {
+					background-position: 90% 0;
+					background-size: auto;
+					max-width: 800px;
+				}
+			}
+
+			.trainerContainer {
+
+				h5 {
+					&.icon-yoga-star:before {
+						left: 0;
+					}
+
+					@media only screen and (max-width: 641px) {
+						padding-top: 4px;
+				
+						&.icon-yoga-star:before {
+							display: inline-block;
+							position: relative;
+							vertical-align: middle;
+							margin: 0 8px 0 0;
+						}
+					}
+
+					@media only screen and (min-width: 1120px) {
+						&.icon-yoga-star:before {
+							right: 0;
+							left: inherit;
+						}
+					}
+				}
+
+				&.yoga {
+					width: 100%;
+					right: 0;
+					height: auto;
+					bottom: 0;
+					text-align: center;
+					padding-bottom: 4px;
+					top: initial;
+
+					@media only screen and (min-width: 642px) {
+						bottom: 80%;
+						text-align: left;
+						right: 4%;
+						width: 120px;
+					}
+
+					@media only screen and (min-width: 1120px) {
+						text-align: right;
+						bottom: 45%;
+						margin: 0 50px 0 0;
+						top: 160px;
+						right: 50%;
+					}
+				}
+			}
+		}
+	}
+
+// // ==========================================================================
+// // SUCCESS
+// // ==========================================================================
+
+.success-stories {
+	background: $almostBlack;
+	.header {
+		padding-bottom: 20px;
+		h2 {
+			padding-left: 24px;
+		}
+		
+	}
+	.ribbon-tag {
+		background: $almostBlack;
+	}
+	.left-tweet {
+		@media screen and (min-width: $large + px){
+			    left: 0;
+			    position: absolute;
+			    top: 51.5%;
+		}
+	}
+	p {
+		font-size: 18px !important;
+		font-weight: $medium !important;
+		color: $newBlack !important;
+	}
+	.read-more {
+		color: $pacificBlue;
+		font-size: 13px;
+		font-weight: $bold;
+		text-transform: uppercase;
+			&:hover {
+				color: lighten($pacificBlue, 10);
+			}
+	}
+}
+// 	.success-stories {
+// 		background: #dde8f0;
+// 		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZThmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmQzZDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+// 		background: -moz-linear-gradient(top,  #ECF1F5 0%, #F0E6E4 100%);
+// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ECF1F5), color-stop(100%,#F0E6E4));
+// 		background: -webkit-linear-gradient(top,  #ECF1F5 0%,#F0E6E4 100%);
+// 		background: -o-linear-gradient(top,  #ECF1F5 0%,#F0E6E4 100%);
+// 		background: -ms-linear-gradient(top,  #ECF1F5 0%,#F0E6E4 100%);
+// 		background: linear-gradient(to bottom,  #ECF1F5 0%,#F0E6E4 100%);
+// 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ECF1F5', endColorstr='#F0E6E4',GradientType=0 );
+// 		padding: 90px 0 50px;
+
+// 		@media only screen and (max-width: $verysmall) {
+// 			padding: 60px 0 30px;
+// 		}
+
+// 		.column,
+// 		.columns {
+// 			padding-left: 25px;
+// 	    	padding-right: 25px;
+// 		}
+
+// 		.header {
+// 			padding: 0 0 54px 0;
+
+// 			@media only screen and (max-width: $verysmall) {
+// 				padding: 0 0 28px 0;
+// 			}
+// 		}
+
+// 		.row .row {
+// 			margin: 0 -25px;
+// 		}
+
+// 		.bg-white {
+// 			position: relative;
+// 			margin: 0 0 50px 0;
+// 			@include pre(border-radius, 3px);
+// 		}
+
+// 		.headshot {
+// 			overflow: hidden;
+// 			@include pre(border-radius, 50%);
+// 			-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+			
+// 			img {
+// 				@include pre(border-radius, 50%);
+// 			}
+
+// 			&.single-headshot {
+// 				height: 154px;
+// 				width: 154px;
+
+// 				img {
+// 					width: 154px;
+// 				}
+// 			}
+
+// 			&.double-headshot {
+// 				width: 110px;
+// 				height: 110px;
+// 				border: 4px solid #fff;
+// 			}
+// 		}
+		
+// 		// Success Stories
+// 		.success.bg-white {
+// 			position: relative;
+// 			padding: 65px 26px 50px 26px;
+
+// 			@media only screen and (max-width: $verysmall) {
+// 				text-align: center;
+// 				padding: 65px 26px 26px 26px;
+// 			}
+// 		}
+
+// 		.image-container.has-two {
+// 			height: 110px;
+// 			display: inline-block;
+
+// 			.headshot {
+// 				position: absolute;
+// 			}
+
+// 			.first-headshot {
+// 				left: 50%;
+// 				margin: 0 0 0 -100px;
+// 				z-index: 2;
+// 			}
+
+// 			.second-headshot {
+// 				right: 50%;
+// 				margin: 0 -100px 0 0;
+// 				z-index: 1;
+// 			}
+// 		}
+
+// 		.text-left {
+
+// 			.image-container.has-one {
+// 				position: absolute;
+// 				right: 26px;
+// 				width: 150px;
+// 				top: 50%;
+// 				margin: -75px 0 0 0;
+
+// 				@media only screen and (max-width: $verysmall) {
+// 					position: relative;
+// 					right: inherit;
+// 					left: 50%;
+// 					margin: 0 0 0 -75px;
+// 				}
+// 			}
+
+// 			.image-container.has-two {
+// 				width: 180px;
+// 				position: absolute;
+// 				right: 40px;
+// 				top: 50%;
+// 				margin: -55px 0 0 0;
+
+// 				.first-headshot {
+// 					margin: 0 0 0 -90px;
+// 				}
+
+// 				.second-headshot {
+// 					margin: 0 -90px 0 0;
+// 				}
+
+// 				@media only screen and (max-width: $verysmall) {
+// 					position: relative;
+// 					right: inherit;
+// 					margin: 0;
+// 				}
+// 			}
+// 		}
+
+// 		.text-center {
+
+// 			.image-container.has-one {
+// 				width: 100%;
+
+// 				.headshot {
+// 					display: inline-block;
+// 					margin: 10px 0;
+// 				}
+// 			}
+
+// 			.image-container.has-two {
+// 				margin: 0 0 10px 0;
+// 			}
+// 		}
+
+// 		.ribbon-tag {
+// 			position: absolute;
+// 			left: 0;
+// 			top: 20px;
+// 			font-size: 14px;
+// 			text-align: right;
+// 			width: 150px;
+// 			padding: 0 15px 0 0;
+// 			height: 28px;
+// 			line-height: 28px;
+// 		}
+		
+// 		.gamma {
+// 			font-family: $avenirCond;
+// 			text-transform: none;
+// 			font-size: 30px;
+// 			margin: 0 160px 15px 0;
+// 			color: #000;
+
+// 			@media only screen and (max-width: $verysmall) {
+// 				margin: 10px 0 14px;
+// 			}
+// 		}
+
+// 		.text-center .gamma {
+// 			margin: 0 0 15px 0;
+// 		}
+
+// 		.read-more {
+// 			color: $cyan;
+// 			font-weight: $medium;
+// 			font-size: 16px;
+
+// 			&:hover {
+// 				color: darken($cyan, 10);
+// 			}
+// 		}
+
+// 		// Tweets
+// 		.tweet.bg-white {
+// 			position: relative;
+// 			padding: 65px 26px 22px 26px;
+
+// 			a {
+// 				word-wrap: break-word;
+// 			}
+
+// 			.avatar-wrapper {
+// 				position: absolute;
+// 				left: 0;
+// 				right: 0;
+// 				top: -15px;
+
+// 				.icon-twitter,
+// 				.avatar {
+// 					position: absolute;
+// 				}
+
+// 				.icon-twitter {
+// 					display: block;
+// 					width: 60px;
+// 					height: 60px;
+// 					line-height: 72px;
+// 					text-align: center;
+// 					background: $cyan;
+// 					color: #fff;
+// 					@include pre(border-radius, 50%);
+// 					z-index: 1;
+// 					margin: 2px 0 0 -55px;
+// 					left: 50%;
+// 					font-size: 24px;
+// 				}
+
+// 				.avatar {
+// 					display: block;
+// 					width: 64px;
+// 					height: 64px;
+// 					overflow: hidden;
+// 					z-index: 2;
+// 					margin: 0 -55px 0 0;
+// 					right: 50%;
+// 					-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+// 					@include pre(border-radius, 50%);
+// 					border: 3px solid #fff;
+					
+// 					img {
+// 						@include pre(border-radius, 50%);
+// 					}
+// 				}
+// 			}
+
+// 			p {
+// 				font-size: 22px;
+// 				margin: 0;
+// 				color: #5A5A5A;
+// 				line-height: 1.6;
+
+// 				@media only screen and (max-width: $verysmall) {
+// 					font-size: 18px;
+// 				}
+// 			}
+// 		}
+
+// 		.small-tweet .tweet.bg-white p {
+// 			font-size: 16px;
+// 		}
+
+// 		.read-all {
+
+// 			.button {
+// 				position: relative;
+// 				margin: 0 0 0 30px;
+// 				top: -2px;
+// 				font-size: 16px;
+// 				padding: 12px 35px;
+// 			}
+// 		}
+
+// 		.owl-item {
+// 			@media only screen and (min-width: 1026px) {
+// 				padding: 20px 0 0;
+// 			}
+// 		}
+
+// 		.owl-theme .owl-controls {
+// 			.owl-page {
+
+// 				span {
+// 					background: none;
+// 					border: 1px solid $cyan;
+// 					margin: 5px 10px;
+// 					width: 9px;
+// 					height: 9px;
+// 				}
+
+// 				&.active {
+
+// 					span {
+// 						background: $cyan;
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.custom-owlnav {
+// 			position: absolute;
+// 			top: 40%;
+
+// 			a {
+// 				color: #6D6D6D;
+// 				color: rgba(109,109,109,0.35);
+
+// 				&:hover {
+// 					color: $cyan;
+// 				}
+
+// 				&:before {
+// 					font-size: 26px;
+// 				}
+// 			}
+
+// 			&.prev {
+// 				left: 0;
+// 				margin-left: 12px;
+// 			}
+// 			&.next {
+// 				right: 0;
+// 				margin-right: 12px;
+// 			}
+// 		}
+// 	}
+
+// ==========================================================================
+// RATINGS + PRESS
+// ==========================================================================
+	.press-ratings {
+		p.bold {
+			font-weight: $medium;
+		}
+		.five-stars {
+			background-position: 50% 0;
+			background-size: auto 194px;
+			padding: 224px 0 6px;
+			position: relative;
+
+			// &:after,
+			// &:before,
+			// .ratings-content:before {
+			// 	content: "";
+			// 	position: absolute;
+			// 	background: $greyBorder;
+			// 	height: 1px;
+			// }
+
+			// &:before,
+			// .ratings-content:before  {
+			// 	bottom: 0;
+			// 	left: 0;
+			// 	width: 100%;
+			// 	display: block;
+			// }
+
+			// &:before {
+			// 	display: none;
+			// 	margin-bottom: -8px;
+			// }
+
+			// &:after {
+			// 	left: 20%;
+			// 	width: 60%;
+			// 	bottom: 35px;
+			// }
+
+			@media only screen and (min-width: 642px) {
+				background-position: 12% 100%;
+				background-size: contain;
+				padding: 104px 0 286px;
+
+				&:after,
+				.ratings-content:before {
+					display: none;
+				}
+
+				&:before {
+					display: block;
+					margin: 0;
+				}
+			}
+
+			@media only screen and (min-width: 1026px) {
+				background-position: 22% 100%;
+				background-size: initial;
+
+			
+			}
+		}
+
+		.logo-wrap {
+			height: 148px;
+			display: block;
+
+			@media only screen and (min-width: 651px) {
+				height: 168px;
+			}
+		}
+	}
+
+// ==========================================================================
+// FOOTER
+// ==========================================================================
+	.try-cta {
+		background: url(../images/landing-page-final-cta.jpg) center no-repeat;
+		background-size: cover;
+		padding: 150px 0;
+		text-align: center;
+
+		h3 {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 30px;
+		}
+
+		// a.button {
+		// 	display: inline-block;
+		// 	background-color: #008ABD;
+		// 	margin-left: 40px;
+		// 	font-size: 20px;
+		// 	padding: 14px 46px;
+
+		// 	&:hover {
+		// 		background-color: darken(#008ABD, 5);
+		// 	}
+		// }
+
+		@media only screen and (max-width: $verysmall) {
+			padding: 26px 0 38px;
+
+			h3 {
+				font-size: 26px;
+				display: block;
+			}
+			
+			a.button {
+				font-size: 18px;
+				padding: 12px 28px;
+				margin: 6px 0 0 0;
+			}
+		}
+	}
+}
+
+// ==========================================================================
+// Terms
+// ==========================================================================
+.terms {
+	padding: 20px 0 10px 0;
+	background: #fff;
+
+	p {
+		margin: 0 0 10px 0;
+		padding: 0;
+		font-size: 12px;
+	}
+}

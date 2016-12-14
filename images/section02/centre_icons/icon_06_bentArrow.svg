@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="43px" viewBox="0 0 42 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_06_bentArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="21" cy="21.7938696" r="21"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="24.3385417 11.2887467 24.3385417 0.515835526 17.7793257 0.515835526 17.7793257 11.2887467 24.3385417 11.2887467"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="January-Promo" transform="translate(-662.000000, -1828.000000)">
+            <g id="center_icons" transform="translate(652.000000, 1112.000000)">
+                <g id="icon_06_bentArrow" transform="translate(10.000000, 716.000000)">
+                    <use id="Oval-Copy-4" stroke="#DFDFDF" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="icon" opacity="0.300000012" transform="translate(8.000000, 9.793870)">
+                        <path d="M11.80875,18.8039526 C11.80875,18.9490645 11.693125,19.0655776 11.5514583,19.0655776 L0.781666667,19.0655776 C0.349375,19.0655776 0.000416666667,18.7096829 0.000416666667,18.2711697 L0.000416666667,18.2711697 C0.000416666667,17.8326566 0.349375,17.4767618 0.781666667,17.4767618 L9.98895833,17.4767618 C10.130625,17.4767618 10.24625,17.3602487 10.24625,17.2151368 L10.24625,5.33609079 C10.24625,5.17403158 10.3754167,5.04268947 10.5347917,5.04268947 L21.7452083,5.04268947 L21.7452083,6.63150526 L12.0972917,6.63150526 C11.9379167,6.63150526 11.80875,6.76284737 11.80875,6.92490658 L11.80875,18.8039526 Z" id="Fill-1" fill="#1C202C"></path>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <path d="M24.1338542,5.38513224 L19.1026042,0.685415132 C18.8442708,0.444974342 18.4442708,0.461921711 18.2078125,0.723546711 L17.9515625,1.00635592 C17.7151042,1.26904013 17.7317708,1.67683618 17.9890625,1.91727697 L21.3161458,5.02500066 C21.4494792,5.56625724 21.3609375,6.13717171 21.3432292,6.69749408 L17.9807292,9.89313224 C17.7244792,10.1367507 17.7109375,10.5445467 17.9505208,10.8040533 L18.2088542,11.0847441 C18.4473958,11.3442507 18.8484375,11.3580204 19.1036458,11.1154612 L24.1380208,6.32994803 C24.4078125,6.07361908 24.4057292,5.63934276 24.1338542,5.38513224" id="Fill-3" fill="#1C202C" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

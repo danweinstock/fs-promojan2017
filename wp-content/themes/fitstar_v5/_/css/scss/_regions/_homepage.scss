@@ -1,0 +1,1631 @@
+// ==========================================================================
+// HERO
+// ==========================================================================
+#hero-home {
+    position: relative;
+    z-index: 1000;
+
+    display: block;
+    overflow: visible;
+
+    margin-right: -#{$siteOffset};
+    margin-left: -#{$siteOffset};
+    padding: 0;
+    padding: 0 $siteOffset;
+    background-color: #ff4b76;
+    background: url(../images/hero-homepage.jpg) center no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 480px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .hero-content {
+        padding-top: 30px;
+        text-align: center;
+        position: relative;
+
+        @media screen and (min-width: $med + px){
+            padding: 60px 0 0;
+            
+        }
+        @media screen and (min-width: $large + px){
+             text-align: left;
+             padding: 140px 0 200px;
+        }
+        .medium-9 {
+             @media screen and (min-width: $med + px){
+                float: none !important;
+            }
+            @media screen and (max-width: 1023px){
+                margin: auto;
+            }
+           
+        }
+    }
+    .title {
+        margin-bottom: 25px;
+
+        color: #fff;
+    }
+    h2 {
+        width: 90%;
+        margin: 15px auto;
+        @media screen and (min-width: 628px) and (max-width: $med + px){
+            width: 80%;
+        }
+    }
+    p {
+      margin-bottom: 20px;
+      color: $snow;
+      font-size: 18px;
+    font-weight: 500;
+        @media screen and (min-width: 628px) and (max-width: $med + px){
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+    }
+    .button {
+        @media screen and (max-width: $med + px){
+            width: 160px;
+            margin: 0 auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+// ==========================================================================
+// GOALS
+// ==========================================================================
+.homepage-goals {
+    margin: 0 -#{$siteOffset};
+    padding-top: 100px;
+    padding-right: $siteOffset;
+    padding-left: $siteOffset;
+    background: $fog;
+    @media screen and (min-width: $medium + px) and (max-width: $large + px){
+        padding-top: 160px;
+    }
+
+    @extend .clearfix;
+    .row {
+        position: relative;
+    }
+    .columns {
+        position: static;
+    }
+    .goals {
+      position: relative;
+    }
+    .goals-intro {
+        padding-top: 100px;
+        padding-left: 50px;
+        display: none;
+        @media screen and (min-width: $med + px) and (max-width: $large + px) {
+            padding-top: 70px;
+            padding-left: 20px;
+        }
+        @media screen and (min-width: $med + px){
+            display: inline-block;
+            width: 50%;
+            position: absolute;
+            top: -60px;
+        }
+    }
+    .goals-intro-mobile {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: $med + px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media screen and (min-width: $med + px) {
+            display: none;
+        }
+    }
+    .goals > li {
+        margin-bottom: 70px;
+            @media screen and (min-width: $med + px){
+                float: left;
+                width: 50%;
+            }
+
+            &:nth-child(even) {
+                clear: left;
+            }
+            &:nth-child(odd) {
+                clear: right;
+            }
+
+        &:nth-child(1) {
+            .original {
+                img {
+                    @media screen and (min-width: $med + px) {
+                        float: right;
+                        width: 100%;
+
+                    }
+                    @media screen and (min-width: $large + px){
+                        max-width: 80%;
+                    }
+
+                }
+                a {
+                    @media screen and (min-width: $med + px) and (max-width: $large + px){
+                        left: 0px;
+                        top: 21%;
+                    }
+                    @media screen and (min-width: $large + px) {
+                        left: 25px;
+                        top: 227px;
+                    }
+
+                    &:before {
+                        background: $gradient_purple;
+                    }
+                }
+            }
+            .details {
+                .title {
+                    background: $gradient_purple;
+                }
+            }
+        }
+        &:nth-child(2) {
+                @media screen and (min-width: $large + px){
+                    padding-right: 50px;
+                }
+
+            .original {
+                img {
+                    @media screen and (min-width: $med + px){
+                        width: 100%;
+                    }
+                    @media screen and (min-width: $large + px){
+                        max-width: 92%;
+                    }
+                }
+                a {
+                    @media screen and (min-width: $med + px) and (max-width: $large + px) {
+                            top: 68%;
+                            left: 32%;
+                    }
+                    @media screen and (min-width: $large + px) and (max-width: $xlarge + px) {
+                        top: 589px;
+                        left: 290px;
+                    }
+                    @media screen and (min-width: $xlarge + px){
+                        top: 629px;
+                        left: 370px;
+                    }
+
+                    &:before {
+                        background: $gradient_red;
+                    }
+                }
+            }
+            .details {
+                .title {
+                    background: $gradient_red;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .original {
+                img {
+                    @media screen and (min-width: $med + px) {
+                        width: 100%;
+                    }
+                    @media screen and (min-width: $large + px){
+                        max-width: 80%;
+                    }
+                }
+                a {
+                    @media screen and (min-width: $med+ px) and (max-width: $large + px) {
+                        top: 69%;
+                        left: 82%;
+                    }
+                    @media screen and (min-width: $large + px) and (max-width: $xlarge + px) {
+                        top: 589px;
+                        left: 80%;
+                    }
+                    @media screen and (min-width: $xlarge + px){
+                        top: 629px;
+                        left: 80%;
+                    }
+
+                    &:before {
+                        background: $gradient_pink;
+                    }
+                }
+            }
+            .details {
+                .title {
+                    background: $gradient_pink;
+                }
+                .recommendation {
+                    margin-top: -30px;
+                    @media screen and (min-width: $med + px){
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        // Section copy (second li)
+        > h2 {
+            margin-bottom: 20px;
+        }
+    }
+    .original {
+        @extend .clearfix;
+        @media screen and (max-width: $med + px) {
+            position: relative;
+        }
+        @media screen and (min-width: 600px) and (max-width: $med + px){
+            margin: 20px 100px;
+        }
+        a {
+            font-weight: $medium;
+            position: absolute;
+            display: block;
+            overflow: hidden;
+            line-height: 1.3;
+            max-width: 200px;
+            padding: 30px 35px;
+            color: #fff;
+            background: rgba($almostBlack,.9);
+            @media screen and (max-width: $med + px) {
+                right: 0;
+                bottom: 0;
+            }
+            @media screen and (min-width: $med + px) and (max-width: $large + px) {
+                width: 160px;
+                padding: 30px 35px;
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: block;
+
+                width: 100%;
+                height: 100%;
+
+                content: '';
+
+                opacity: 0;
+
+                @include trans(opacity .2s ease);
+            }
+            &:hover,
+            &.focused {
+                color: #fff;
+                box-shadow: none;
+                &:before {
+                    opacity: 1;
+                }
+                .icon-plus-thick {
+                    color: #fff !important;
+                }
+            }
+        }
+        span {
+            position: relative;
+        }
+        .icon-plus-thick {
+            font-size: 18px;
+            line-height: 1;
+
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            color: $pacificBlue;
+
+            @include trans(color .2s ease-out);
+        }
+    }
+    .details {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+
+        @extend .clearfix;
+        > div {
+            @media screen and (min-width: $med + px){
+                float: left;
+            }
+        }
+        .title {
+            margin-bottom: -1px;
+            text-align: center;
+            padding: 45px 30px 10px 30px;
+            @media screen and (min-width: $med + px){
+                width: 26%;
+                padding: 35px 35px 35px 60px;
+                text-align: left;
+                margin-bottom: 0;
+            }
+            a,
+            h2 {
+                color: $snow;
+            }
+            a {
+                font-size: 25px;
+
+                display: inline-block;
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                @media screen and (min-width: $med + px){
+                    margin-bottom: 60px;
+                    position: static;
+                }
+                margin-left: -20px;
+
+                @include trans(transform .1s ease-out);
+                &:hover {
+                    @include pre(transform, scale(1.1));
+                }
+            }
+            h2 {
+              position: relative;
+              @media screen and (min-width: $med + px) and (max-width: $large + px) {
+                font-size: 30px;
+                left: -25px !important;
+              }
+            }
+        }
+        .content {
+            overflow: hidden;
+            @media screen and (min-width: $med + px){
+                width: 37%;
+            }
+
+            img {
+                width: 100%;
+                @media screen and (min-width: $med + px){
+                    height: 100%;
+                    width: auto;
+                    max-width: inherit;
+                }
+
+            }
+        }
+        .recommendation {
+            @media screen and (min-width: $med + px){
+                width: 37%;
+                  min-height: 725px;
+
+            }
+
+
+            padding: 70px 50px 65px;
+
+            text-align: center;
+
+            background: $almostBlack;
+            h5 {
+                margin-bottom: 25px;
+
+                text-transform: uppercase;
+
+                color: $pacificBlue;
+            }
+            i[class*=icon] {
+                font-size: 25px;
+
+                display: block;
+
+                margin-bottom: -8px;
+
+                color: #fff;
+            }
+            h2,
+            h3,
+            h6,
+            p {
+                color: #fff;
+            }
+            h3 {
+                margin-bottom: 5px;
+            }
+            h6 {
+                padding-bottom: 40px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid rgba(#fff,.5);
+            }
+            .stats {
+                margin-top: 40px;
+                li {
+                    display: inline-block;
+
+                    padding: 0 15px;
+                }
+                h2 {
+                  margin-bottom: 5px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+            .button {
+                width: 100%;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+        .content,
+        .recommendation {
+          @media (min-width: $med + px) {
+            opacity: 0;
+          }
+        }
+    }
+    li.active .details {
+        display: block;
+        @media (min-width: $med + px) {
+          display: none;
+        }
+    }
+}
+
+
+
+// ==========================================================================
+// POSES VIDEO
+// ==========================================================================
+#poses-video {
+  text-align: center;
+  @media screen and (max-width: $med + px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: $large + px) {
+    text-align: left;
+  }
+  .poses-details {
+      margin-top: 30px;
+      @media screen and (max-width: $med + px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media screen and (min-width: $large + px) {
+                max-width: calc(100% - 580px);
+                padding-left: 40px;
+        }
+      @media screen and (min-width: $xlarge + px) {
+          max-width: calc(100% - 738px);
+          margin-top: 100px;
+          
+      }
+
+      p {
+          margin-bottom: 25px;
+      }
+  }
+	.poses-video {
+        @media screen and (min-width: $large + px){
+                min-width: 580px;
+            }
+		@media screen and (min-width: $xlarge + px){
+			min-width: 738px;
+		}
+	}
+}
+
+// ==========================================================================
+// FITBIT INTEGRATION
+// ==========================================================================
+#fitbit-integration {
+    background: url(../images/fitbit-integration-bg-mobile.jpg) center no-repeat;
+    background-size: cover;
+    padding: 50px 0 0;
+    text-align: center;
+
+    @media screen and (min-width: $med + px){
+        padding: 60px 0 110px ;
+        background: url(../images/fitbit-integration-bg.jpg) center no-repeat;
+        
+        background-size: cover;
+    }
+    @media screen and (min-width: $large + px) {
+        padding-left: 100px 0;
+    }
+    @media screen and (min-width: $xlarge + px){
+        padding: 152px 0;
+    }
+    p {
+        color: $snow;
+    }
+    .large-5 {
+        padding-bottom: 50px;
+        @media screen and (max-width: $med + px) {
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        @media screen and (min-width: $med + px){
+            padding-bottom: 110px;
+        }
+        @media screen and (min-width: $large + px) {
+            text-align: left;
+        }
+        @media screen and (min-width: $large + px) and (max-width: $xlarge + px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $xlarge + px){
+          padding-bottom: 0;
+        }
+        .logos-container {
+            @media screen and (max-width: $med + px) {
+                margin-bottom: 20px !important;
+            }
+            // img {
+            //     margin: 10px 20px;
+            // }
+            img {
+                margin: 10px;
+                width: 130px;
+            }
+            i {
+                color: $snow;
+            }
+        }
+    }
+    .fitbit-devices {
+        position: relative;
+        text-align: left;
+        .logos-container {
+            @media screen and (min-width: $med + px) {
+                position: relative;
+                top: -100px;
+                img {
+                    margin: 10px 20px;
+                }
+            }
+            @media screen and (min-width: 1200px) and (max-width: 1300px) {
+                top: -40px;
+            }
+            i {
+                color: $snow;
+            }
+        }
+        .devices-container {
+          z-index: 3;
+          position: relative;
+          height: 433px;
+          width: 90%;
+          margin: 0 auto -80px;
+          max-width: 375px;
+          img:first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .device-black-fitbit {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          .device-watch-fitbit {
+            position: absolute;
+            right: -20px;
+            bottom: -50px;
+          }
+         
+          @media screen and (min-width: $med + px){
+            position: absolute;
+            top: -20px;
+            width: auto;
+            height: auto;
+            margin: 0;
+            max-width: inherit;
+             @media screen and (min-width: 1200px) {
+                top: 50px;
+            }
+            @media screen and (min-width: 1300px) {
+                top: -20px;
+            }
+            img:first-child {
+              position: static;
+            }
+            .device-black-fitbit {
+                left: 160px;
+                right: auto;
+            }
+            .device-watch-fitbit {
+                position: relative;
+                top: 130px;
+                left: 120px;
+            }
+          }
+        }
+        .recommendations {
+          display: none;
+          position: relative;
+          @media screen and (min-width: $med + px){
+            display: block;
+            z-index: 3;
+            text-align: right;
+            left: -20px;
+          }
+          @media screen and (min-width: 900px){
+            left: -80px;
+          }
+          @media screen and (min-width: $large + px){
+            top: 0px;
+            left: 420px;
+            text-align: left;
+          }
+            h5 {
+                margin-bottom: 20px;
+                position: relative;
+                left: 20px;
+                &:before {
+                    font-family: "icomoon";
+                    content: "\e915"; //icon-step
+                    position: absolute;
+                    font-size: 20px;
+                    right: 215px;
+                    top: -5px;
+                    @media screen and (min-width: $large + px) {
+                        left: -20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// TRAINERS
+// ==========================================================================
+
+#trainers {
+    padding-top: 200px;
+    position: relative;
+     &:before {
+        content: "";
+        position: absolute;
+        background: $lightFog;
+        width: 52%;
+        height: 100%;
+        right: 27%;
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-22deg);
+        top: 0px;
+        @media screen and (min-width: $large + px){
+          height: 1500px;
+        }
+    }
+    @media screen and (min-width: $med + px){
+      padding-top: 140px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .row {
+        @media screen and (min-width: $large + px) {
+            padding-top: 80px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .single-trainer {
+      background-size: cover !important;
+      width: 100%;
+      height: 225px;
+      margin-bottom: 20px;
+      @include trans(height .2s ease-out, background-position .2s ease-out, width .2s ease-out);
+      @media screen and (min-width: $small + px){
+        height: 325px;
+      }
+      @media screen and (min-width: $large + px){
+        width: 50%;
+        height: 600px;
+        margin-bottom: 0;
+      }
+      &:before {
+          position: absolute;
+          content: "";
+          background: linear-gradient(to right, rgba(137,32,158,0.5), rgba(197,61,125,0.5));
+          width: 93%;
+          height: 50%;
+          bottom: 0;
+          left: 7%;
+          z-index: 5;
+          @include trans(all .2s ease-out);
+          @media screen and (min-width: $large + px){
+              height: 105px;
+              bottom: 30%;
+              width: 73%;
+              left: 17%;
+          }
+      }
+      &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 12%;
+				top: calc(50% + 20px);
+				height: 12px;
+				width: 50%;
+				background: linear-gradient(to bottom right, #6F10AD, #C22A7C);
+        @media screen and (min-width: $large + px){
+          left: 132px;
+          top: calc(50% + 45px);
+          display: none;
+        }
+			}
+      &.shrink {
+        height: 175px;
+        &:before {
+          bottom: 0 !important;
+          left: 17% !important;
+          width: 73% !important;
+        }
+        .buttons {
+          bottom: 26% !important;
+          .hidden-btns {
+            display: none !important;
+          }
+        }
+      }
+      &.active {
+        &:before {
+          bottom: 0 !important;
+          height: 280px;
+          width: 83%;
+        }
+        &:after {
+          display: block;
+        }
+        .buttons {
+          opacity: 0;
+        }
+      }
+      .meet {
+          display: none;
+          position: relative;
+          color: $snow;
+          z-index: 5;
+          text-align: center;
+          font-weight: $bold;
+          background: linear-gradient(to bottom right, #6F10AD, #C22A7C);
+          width: 50px;
+          height: 50px;
+          width: 50px;
+          @include trans(all .2s ease-out);
+          @media screen and (min-width: $large + px){
+              display: block;
+          }
+          .icon-plus-thick:before {
+              position: absolute;
+              top: 19px;
+              left: 19px;
+              font-weight: 700;
+          }
+          span {
+              display: block;
+              min-width: 200px;
+              opacity: 0;
+              @include trans(opacity .2s ease-out);
+          }
+      }
+      .buttons {
+        position: absolute;
+        bottom: 36%;
+        opacity: 1;
+        @include trans(bottom .2s ease-out, opacity .1s ease-out);
+        .intro-btn {
+          @media screen and (min-width: 1250px){
+            display: inline-block;
+          }
+        }
+      }
+      .hidden-btns {
+          opacity: 0;
+          pointer-events: none;
+          z-index: 5;
+          text-transform: uppercase;
+          @include trans(opacity .01s ease-out);
+          @media screen and (min-width: 1250px){
+            display: inline-block;
+          }
+          .video {
+              position: relative;
+              width: 240px;
+              &:after {
+                  font-family: "icomoon";
+                  content: "\e639"; //icon-arrow-thick-right
+                  position: absolute;
+                  right: 10px;
+              }
+          }
+      }
+      @media screen and (min-width: $large + px){
+          &:not(.shrink) {
+            &:hover {
+              &:before {
+                height: 280px;
+              }
+            }
+          }
+          &:hover {
+              .meet {
+                  width: 200px;
+                  span {
+                      opacity: 1;
+                      transition-delay: .2s;
+                  }
+              }
+              .hidden-btns {
+                  opacity: 1;
+                  pointer-events: auto;
+                  @include trans(opacity .1s ease-out);
+                  transition-delay: .2s;
+              }
+          }
+      }
+    }
+    .lea {
+        position: relative;
+        background: url(../images/coach-lea.png) no-repeat center -90px;
+        @media screen and (min-width: $small + px){
+          background-position: center -110px;
+        }
+        @media screen and (min-width: $large + px){
+            background-position: center 50%;
+            float: left;
+        }
+        &.video-position {
+          left: 0.9375em;
+        }
+        h1 {
+            position: absolute;
+            font-size: 35px;
+            top: 31%;
+            left: 11%;
+            @media screen and (min-width: $small + px){
+              top: 37%;
+            }
+            @media screen and (min-width: $large + px){
+                font-size: 48px;
+                top: 42%;
+                left: 25%;
+                @include trans(top .2s ease-out, left .2s ease-out);
+            }
+        }
+        .buttons {
+          left: 20%;
+          width: 80%;
+          @media screen and (min-width: $large + px){
+              // bottom: 26%;
+              bottom: 36%;
+          }
+          @media screen and (min-width: 1250px){
+            bottom: 36%;
+          }
+        }
+        .intro-btn {
+          @media screen and (min-width: 1250px){
+            float: left;
+          }
+        }
+        .hidden-btns {
+          margin-top: 15px;
+          @media screen and (min-width: 1250px){
+            float: left;
+            margin-top: 0;
+            padding-left: 25px;
+          }
+        }
+        @media screen and (min-width: $large + px){
+            &:hover {
+                &:before {
+                   bottom: 0;
+                   width: 83%;
+                }
+            }
+        }
+        &.shrink {
+          background-position: center -148px;
+          h1 {
+            top: 6% !important;
+            left: 19% !important;
+          }
+          .meet {
+            bottom: 26% !important;
+          }
+        }
+    }
+    .adrian {
+        position: relative;
+        background: url(../images/coach-adrian.png) no-repeat center -39px;
+        @media screen and (min-width: $large + px){
+            background-position: center 50%;
+            float: right;
+            &.clear {
+              clear: both;
+            }
+        }
+        &:after {
+          left: auto;
+          right: 10%;
+          @media screen and (min-width: $large + px){
+            right: 112px;
+          }
+        }
+        &.shrink {
+          background-position: center -40px;
+          h1 {
+            top: 8%;
+            left: 58%;
+          }
+        }
+        &.active {
+          &:before {
+            left: 0;
+            width: 88%;
+          }
+        }
+        &.video-position {
+          right: 0.9375em;
+          top: 175px;
+          + .trainer-text {
+            clear: both;
+          }
+        }
+        h1 {
+            position: absolute;
+            top: 31%;
+            right: 10%;
+            font-size: 35px;
+            @media screen and (min-width: $small + px){
+              top: 37%;
+            }
+            @media screen and (min-width: $large + px){
+                font-size: 48px;
+                top: 42%;
+                left: 55%;
+                right: auto;
+            }
+        }
+        &:before {
+            left: 0;
+            @media screen and (min-width: $large + px) {
+                left: 17%;
+            }
+        }
+        .buttons {
+          right: 14%;
+          width: 86%;
+          @media screen and (min-width: $large + px){
+              // bottom: 26%;
+              bottom: 36%;
+          }
+          @media screen and (min-width: 1250px){
+            bottom: 36%;
+          }
+        }
+        .intro-btn {
+            float: right;
+        }
+        .hidden-btns {
+          margin-top: 15px;
+          float: right;
+          clear: both;
+          @media screen and (min-width: 1250px){
+            padding-right: 25px;
+            clear: none;
+            margin-top: 0;
+          }
+        }
+        @media screen and (min-width: $large + px){
+            &:hover {
+                &:before {
+                    width: 88%;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .intro-trainer {
+        background: linear-gradient(to bottom right, #6F10AD, #C22A7C);
+        height: 50px;
+        padding-top: 17px;
+        display: inline-block;
+        color: $snow;
+        font-weight: $bold;
+        font-size: 14px;
+        padding-left: 20px;
+        z-index: 5;
+        bottom: 30%;
+        z-index: 5;
+        text-transform: uppercase;
+        @media screen and (min-width: $large + px){
+            bottom: 36%;
+        }
+    }
+    .meet-lea {
+        @media screen and (max-width: $large + px) {
+            left: 11%;
+        }
+    }
+    .meet-adrian {
+        @media screen and (max-width: $large + px){
+            right: 11%;
+        }
+    }
+    .trainer-text {
+        text-align: center;
+        padding-bottom: 50px;
+        @media screen and (min-width: $large + px){
+            text-align: left;
+            padding: 30px 60px;
+            width: 50%;
+            float: left;
+        }
+        h3 {
+            margin-bottom: 20px;
+            @media screen and (max-width: $large + px) {
+                font-size: 22px;
+            }
+        }
+    }
+    .about-lea-hidden,
+    .about-adrian-hidden {
+      // position: absolute;
+      @media (min-width: $large + px) {
+        opacity: 0;
+        height: 0;
+        @include trans(opacity .2s ease-out);
+        &.visible {
+          opacity: 1;
+          height: auto;
+        }
+        &.video {
+          position: absolute;
+          opacity: 0;
+        }
+      }
+      .watch-video {
+        background-size: cover !important;
+        max-width: 450px;
+        padding-left: 60px !important;
+        @media (min-width: $large + px) {
+          max-width: initial;
+        }
+      }
+    }
+    .about-lea-hidden {
+      // right: 0;
+      float: right;
+        .watch-video {
+            background: url(../images/watch-lea-video.png) center no-repeat;
+        }
+        &.vieo {
+          right: 0;
+        }
+    }
+    .about-adrian-hidden {
+      // left: 0;
+        .watch-video {
+            background: url(../images/watch-adrian-video.jpg) center no-repeat;
+        }
+        &.video {
+          left: 0;
+        }
+    }
+    .trainers-heading {
+        text-align: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: $med + px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (min-width: $med + px) {
+            text-align: left;
+        }
+    }
+
+    .trainer-video {
+  		opacity: 0;
+  		padding-bottom: 0;
+  		position: relative;
+  		height: 0;
+  		@include trans(opacity .2s ease-out);
+  		iframe {
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  		}
+  		.close-video {
+  			background: linear-gradient(to bottom right, #6F10AD, #C22A7C);
+  			color: #fff;
+  			font-weight: $bold;
+  			position: absolute;
+  			right: -55px;
+  			top: 0;
+  			padding: 19px 19px 18px;
+  			font-size: 13px;
+  			&:hover {
+  				background: rgba($almostBlack,.9);
+  			}
+  		}
+      &.adrian-video .close-video {
+        right: auto;
+        left: -55px;
+        top: 4px;
+      }
+  	}
+  	.video-play {
+			width: 70%;
+			padding: 0;
+			@media (min-width: $med + px) {
+				width: 80%;
+			}
+			@media (min-width: $large + px) {
+				width: 957px;
+			}
+			@media (min-width: 1100px) {
+				width: 1007px;
+			}
+			&:before,
+			&:after,
+			h2 {
+				opacity: 0;
+				pointer-events: none;
+			}
+      .trainer-video {
+        opacity: 1;
+        padding-top: 34px;
+        padding-bottom: 56.25%; /* 16:9 */
+        transition-delay: .4s;
+      }
+		}
+    .video-position {
+      position: absolute;
+    }
+		.trainer-text.play {
+			opacity: 0 !important;
+			pointer-events: none;
+      max-height: 600px;
+			// max-height: 0;
+		}
+}
+
+
+// ==========================================================================
+// SUCCESS STORIES
+// ==========================================================================
+#success-stories-home {
+    background: url(../images/success-story-bg-mobile.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    @media screen and (max-width: $large + px){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    @media screen and (min-width: $med + px){
+        background: url(../images/success-story-bg.jpg) center no-repeat;
+        text-align: left;
+        background-size: cover;
+    }
+    .success-intro-home{
+        @media screen and (max-width: $med + px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (min-width: $large + px){
+            text-align: left;
+            margin-left: 24px;
+        }
+        @media screen and (min-width: $xlarge + px) {
+            margin-left: 0;
+        }
+    }
+    p {
+        color: $snow;
+    }
+    .success-story-posts {
+        @media screen and (min-width: $med + px) and (max-width: 1260px){
+            float: none !important;
+            width: 100% !important;
+        }
+        .featured-success-stories {
+            background: none;
+            li {
+                background: $snow;
+                min-height: inherit;
+                border-bottom: 0;
+                margin: 30px auto;
+                @media screen and (min-width: 540px) and (max-width: $med + px) {
+                    width: 80%;
+                }
+                @media screen and (min-width: $med + px) {
+                    margin: 24px;
+                }
+                    .thumbnail {
+                        padding: 0;
+                        top: 0;
+                    }
+                    .thumbnail-copy {
+                        padding: 20px;
+                        text-align: left;
+                    }
+            }
+        }
+        .button {
+            margin: 0 auto;
+            display: block;
+            max-width: 450px;
+            @media screen and (min-width: 540px) and (max-width: $med + px) {
+                    width: 80%;
+                }
+            @media screen and (min-width: $large + px) {
+                float: right;
+                margin-right: 24px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// FITSTAR FEATURES
+// ==========================================================================
+
+#fitstar-features {
+  overflow: hidden;
+    @media screen and (min-width: $xlarge + px) {
+        padding-bottom: 100px;
+    }
+    .row {
+        margin-left: 0;
+        @media screen and (min-width: 1400px){
+            margin-left: auto;
+        }
+    }
+    .fitstar-features-devices {
+        position: relative;
+        padding-left: 0;
+        text-align: center;
+        @media screen and (min-width: $med + px) {
+          margin-bottom: 50px;
+        }
+        @media screen and (min-width: $large + px) {
+          margin-top: 100px;
+          margin-bottom: 0;
+          text-align: left;
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            background: $fog;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            display: inline-block;
+            width: 460px;
+          }
+          &:before{
+            height: 920px;
+            transform: skewX(44deg);
+            top: -160px;
+            left: -260px;
+          }
+          &:after {
+            height: 600px;
+            transform: skewX(-44deg);
+            top: 760px;
+            left: -105px;
+          }
+        }
+        &.mobile-devices {
+          height: 590px;
+          width: 400px;
+          margin: 0 auto;
+          @media (min-width: $med + px) {
+            height: auto;
+            width: inherit;
+          }
+          &:before,
+          &:after {
+            content: "";
+      			position: absolute;
+      			background: $fog;
+            height: 100%;
+            width: 460px;
+            left: -229px;
+            -o-text-overflow: clip;
+      			text-overflow: clip;
+      			display: inline-block;
+            @media (min-width: 500px) {
+              left: -359px;
+            }
+            @media (min-width: $med + px) {
+              left: -151px;
+            }
+          }
+          &:before{
+      			transform: skewX(44deg);
+      			top: -240px;
+            @media (min-width: $med + px) {
+              top: -335px;
+            }
+      		}
+      		&:after {
+      			transform: skewX(-44deg);
+      			bottom: -350px;
+      			z-index: 2;
+      		}
+        @media (min-width: $large + px) {
+            &:before,
+            &:after {
+              display: none;
+            }
+          }
+
+        }
+        img {
+          position: absolute;
+          z-index: 1;
+          @media screen and (min-width: $med + px){
+            position: relative;
+          }
+        }
+        .fitstar-features-laptop {
+          @media screen and (min-width: $large + px){
+              max-width: none;
+              float: right;
+          }
+          @media screen and (min-width: 1175px){
+            margin-right: -45px;
+          }
+        }
+        .fitstar-features-phone-1 {
+          left: -40px;
+          top: -30px;
+          @media screen and (min-width: $large + px){
+            left: 0;
+            top: 0;
+          }
+        }
+        .fitstar-features-phone-2 {
+          top: 20px;
+          right: -60px;
+          @media screen and (min-width: $med + px){
+            top: 80px;
+            right: auto;
+          }
+          @media screen and (min-width: $large + px){
+              top: 100px;
+              left: 50px;
+          }
+        }
+        .fitstar-features-tablet {
+          bottom: 0;
+          left: -210px;
+          max-width: 500px;
+          @media screen and (min-width: $med + px){
+            bottom: auto;
+            top: 100px;
+            left: -80px;
+            max-width: 100%;
+          }
+          @media screen and (min-width: $large + px){
+            left: -160px;
+            top: 85px;
+          }
+        }
+    }
+    .home-device {
+      position: relative;
+      height: 450px;
+      @media (min-width: $large + px) {
+        min-width: 618px;
+        height: auto;
+        left: -30px;
+      }
+
+      .fitstar-features-laptop {
+        margin-left: 11px;
+        width: 832px;
+        max-width: none;
+        position: absolute;
+        left: 50%;
+        @include pre(transform, translateX(-50%));
+        @media (min-width: $large + px) {
+          margin-left: 0;
+          position: relative;
+          left: 0;
+          @include pre(transform, translateX(0));
+        }
+        @media screen and (min-width: $large + px ) and (max-width: 1280px){
+            width: 742px;
+            left: -100px;
+        }
+
+      }
+      .deviceWrap {
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        width: 573px;
+        height: 360px;
+        overflow: hidden;
+        @include pre(transform, translateX(-50%));
+        z-index: 1;
+        @media (min-width: $large + px) and (max-width: 1280px) {
+          width: 503px;
+            height: 340px;
+        }
+        @media screen and (min-width: $large + px) {
+             @include pre(transform, translateX(0));
+            left: -110px;
+            top: 18px;
+        }
+        @media (min-width: 1175px) {
+          left: -50px;
+        }
+        @media screen and (min-width: 1180px) and (max-width: 1280px){
+            left: -10%;
+            
+            top: 16px;
+        }
+      }
+    }
+    > .row > div:last-child {
+      // @media (min-width: $large + px) {
+      //   max-width: calc(100% - 518px);
+      //   float: right;
+      // }
+      @media screen and (min-width: $large + px){
+        float: right;
+      }
+     
+      @media screen and (min-width: $large + px) and (max-width: 1300px){
+        width: 58%;
+        left: 38px;
+      }
+      @media screen and (min-width: 1300px) {
+            width: 52%;
+            margin-left: 75px;
+      }
+    }
+    .features-list {
+      .single-feature {
+        vertical-align: top;
+        @media screen and (min-width: $med + px){
+          width: 50%;
+          float: left;
+          margin: 0;
+          &:nth-child(odd) {
+            clear: left;
+          }
+          &:nth-child(even) {
+            clear: right;
+          }
+  				i:before {
+  					color: $almostBlack;
+  				}
+  			}
+        &:first-child i {
+  				@extend .icon-freestyle-program;
+  			}
+  			&:nth-child(2) i {
+  				@extend .icon-medal;
+  			}
+  			&:nth-child(3) i {
+  				@extend .icon-wifi;
+  			}
+        &:nth-child(3) i {
+  				@extend .icon-wifi;
+  			}
+        &:nth-child(4) i {
+  				@extend .icon-bent-arrow;
+          &:before {
+            font-size: 18px;
+            position: relative;
+            top: 2px;
+          }
+  			}
+        &:nth-child(5) i {
+                @extend .icon-monitor-simple;
+  			}
+        &:nth-child(6) i {
+  				@extend .icon-music;
+          &:before {
+            font-size: 18px;
+            position: relative;
+            top: 5px;
+          }
+  			}
+      }
+    }
+    .get-started {
+        clear: both;
+        margin-top: 50px;
+        @media screen and (max-width: $med + px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (min-width: $med + px) {
+          
+          margin-top: 150px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @media screen and (min-width: $large + px) {
+          margin-left: 0;
+          margin-right: 0;
+          text-align: left;
+        }
+        @media screen and (min-width: $xlarge + px) {
+            width: 80%;
+        }
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+// ==========================================================================
+// YOGA CALLOUT
+// ==========================================================================
+#yoga-callout {
+    background: url(../images/yoga-callout-bg-mobile.jpg) center no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    @media screen and (min-width: $small + px){
+        background: url(../images/yoga-callout.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .large-5 {
+        @media screen and (max-width: $med + px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .yoga-intro {
+        position: relative;
+        top: 120px;
+        @media screen and (min-width: $med + px){
+            top: 0;
+        }
+    }
+    p {
+        color: $snow;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+// ==========================================================================
+// WORKOUT TIMER
+// ==========================================================================
+.homepage-workout {
+    margin-right: -#{$siteOffset};
+    margin-left: -#{$siteOffset};
+    padding: 160px 0;
+
+    background: url(../images/homepage-workout-bg.jpg) center no-repeat;
+    background-size: cover;
+    .row {
+        padding: 0 $siteOffset;
+    }
+    .white {
+        margin-bottom: 35px;
+    }
+}

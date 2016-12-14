@@ -1,0 +1,150 @@
+// ==========================================================================
+// COMMONALITIES
+// ==========================================================================
+.post-type-archive-jobs,
+.single-jobs {
+
+	// ==========================================================================
+	// HERO
+	// ==========================================================================
+	#hero {
+		background: url(../images/hero-careers.jpg) center;
+		background-size: cover;
+
+		.v-wrapper,
+		.v-inner {
+			height: 300px;
+
+			@media only screen and (max-width: 1024px) {
+				height: 200px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			height: 200px;
+		}
+
+		h1 {
+			margin: 0 0 20px 0;
+			padding: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+
+	// ==========================================================================
+	// MAIN
+	// ==========================================================================
+	#main {
+		position: relative;
+		z-index: 10;
+		background: #fff;
+		margin: 380px 0 0 0;
+		padding: 100px 0;
+		
+		@media only screen and (min-width: 1025px) {
+			.featured-positions {
+
+				ul {
+					width: 90%;
+				}
+			}
+		}
+
+		h2 {
+			margin: 0 0 40px 0;
+			padding: 0;
+
+			@media only screen and (max-width: 650px) {
+				margin: 0 0 20px 0;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			margin: 80px 0 0 0;
+			padding: 50px 0;
+		}
+
+		@media only screen and (max-width: 767px) {
+			margin: 60px 0 0 0;
+		}
+	}
+}
+
+
+// ==========================================================================
+// CAREERS SINGLE
+// ==========================================================================
+.single-jobs {
+
+	.career-body {
+
+		hr {
+			margin: 40px 0;
+		}
+
+		h3 {
+			text-transform: none;
+			font-size: 20px;
+			margin: 50px 0 20px 0;
+		}
+
+		p,
+		li {
+			@extend .light-text;
+
+			&.dark-text {
+				margin: 40px 0 25px 0;
+				color: $bodyColorDark;
+			}
+		}
+
+		ul {
+			@extend .bullet-list ;
+			@extend .light-grey-bullets;
+		}
+	}
+}
+
+
+// ==========================================================================
+// CAREERS SIDEBAR
+// ==========================================================================
+.careers-sidebar {
+
+	li {
+		color: $bodyColorLight;
+	}
+
+	.punch {
+		color: $greyDark;
+		font-size: 18px;
+	}
+
+	hr {
+		margin: 40px 0;
+	}
+
+	img {
+		margin: 40px 0 30px 0;
+	}
+
+	ul {
+		@extend .bullet-list ;
+		@extend .light-grey-bullets;
+	}
+
+	p {
+		color: $bodyColorLight;
+	}
+
+	.button.green {
+
+		@media only screen and (max-width: 650px) {
+			display: none;
+		}
+	}
+}

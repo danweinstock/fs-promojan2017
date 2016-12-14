@@ -1,0 +1,353 @@
+// RESET & UTILITIES
+// ---------------------------------------------------------
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+$sourceURL:				"..";
+
+// BASE STYLES
+// ---------------------------------------------------------
+@import "_base/_mixins.scss";
+@import "_base/_vars.scss";
+@import "_base/_reset.scss";
+@import "_base/_common.scss";
+@import "_base/_grid.scss";
+@import "_base/_type.scss"; 
+@import "_base/_buttons.scss";
+@import "_base/_forms.scss";
+
+// VENDOR 
+// ---------------------------------------------------------
+@import "_vendor/_webfonts.scss";
+
+
+#main {
+  padding:0;
+  margin: 0;
+
+  background: transparent url('../images/free_trial/app-bg.jpg') no-repeat 0 0;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.landing {
+  h1 {
+    margin-bottom: 20px;
+
+    font-size: 45px;
+    line-height: 55px;
+    color:#FFF;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #fff;
+
+    &.secondary {
+      margin-top: 25px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  a.button {
+    padding: 0 30px;
+
+    background-color: #00AFF0;
+    border-radius: 3px;
+    font-size: 20px;
+    line-height: 55px;
+  }
+
+  &.free_trial {
+    .inner {
+      margin:0 auto;
+      width: 1273px;
+      min-height: 2843px;
+
+      background: transparent url('../images/free_trial/background.jpg') no-repeat top center;
+
+      .section {
+        position:relative;
+
+        &.header {
+          height:490px;
+          padding-left: 666px;
+          padding-top: 142px;
+          padding-right: 40px;
+        }
+
+        &.premium_programs {
+          height: 513px;
+          padding-left: 152px;
+          padding-top: 150px;
+
+          h1, p {
+            max-width: 440px;
+            color: #5a5a5a;
+          }
+
+          p {
+            color: #939393;
+            
+            &.secondary {
+              color: #B3B3B3;
+            }
+          }
+
+          .program {
+            position: absolute;
+            width:270px;
+            height:67px;
+
+            padding-top: 12px;
+            padding-left: 33px;
+
+            top:59px;
+            right:227px;
+
+            &.woman {
+              top:401px;
+              right: 371px;
+
+              img {
+                margin-top: 6px;
+              }
+            }
+
+            img, .headings {
+              float: left;
+              display:block;
+            }
+
+            img {
+              margin-top: 1px;
+            }
+
+            .headings {
+              padding-left: 24px;
+
+              h3, h4 {
+                text-transform: none;
+
+              }
+            }
+
+            h3 {
+              color: #6D6D6D;
+              font-size: 17px;
+              line-height: 23px;
+            }
+
+            h4 {
+              color: #999;
+              font-size: 14px;
+              line-height: 19px;
+            }
+          }
+        }
+
+        &.freestyle {
+          margin: 0 auto;
+          padding-top: 183px;
+          width: 550px;
+          height: 479px;
+
+          h1, p {
+            text-align: center;
+          }
+
+          h1 {
+            font-size: 35px;
+            line-height: 48px;
+            color:#333;
+          }
+
+          p.secondary {
+            color: #6D6D6D;
+          }
+        }
+
+        &.gym {
+          height:547px;
+          padding-top: 78px;
+          text-align: center;
+
+          h1 {
+            color:#333;
+          }
+
+          p {
+            color: #6D6D6D;
+          }
+
+          .price {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            left:202px;
+            top: 309px;
+
+            padding-top: 46px;
+
+            color: #FFF;
+
+            &.gym_membership {
+              right: 227px;
+              left: auto;
+
+              color: #999999;
+
+              p { color: #999999; }
+            }
+
+            .cost {
+              font-size: 45px;
+              line-height: 60px;
+
+              &:before {
+                font-size: 18px;
+                content: '$';
+                display: inline;
+                vertical-align: super;
+              }
+            }
+
+            p {
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 13px;
+              line-height: 15px;
+
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &.ratings {
+          height: 409px;
+          padding-top: 160px;
+          padding-left: 560px;
+
+          h1 {
+            color:#333;
+          }
+
+          p {
+            color: #6D6D6D;
+          }
+        }
+
+        &.stories {
+          height: 405px;
+          padding-left: 150px;
+          padding-top: 130px;
+
+          p {
+            width: 410px;
+          }
+
+          .wrapper {
+            position: absolute;
+            top:75px;
+            right:150px;
+
+            div.story {
+              float:left;
+              width: 204px;
+              margin-left: 48px;
+
+              text-align: center;
+
+              h3, h4 {
+                text-transform: none;
+              }
+
+              h3 {
+                color:#fff;
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 18px;
+              }
+
+              h4 {
+                color:#CCCCCC;
+                font-size: 14px;
+                line-height: 19px;
+              }
+
+              img {
+                -moz-box-shadow:    2px 4px 4px 0px rgba(0,0,0,0.50);
+                box-shadow:         2px 4px 4px 0px rgba(0,0,0,0.50);
+              }
+            }
+          }
+        }
+
+        &.promo {
+          height: 145px;
+          background-color: #00AFF0;
+          text-align: center;
+
+          .wrapper {
+            display: inline-block;
+
+            margin-top: 45px;
+          }
+
+          h1 {
+            float:left;
+            font-size: 35px;
+            line-height: 55px;
+          }
+
+          a.button {
+            display: inline-block;
+            float:left;
+            background-color: #008ABD;
+            margin-left: 70px;
+          }
+        }
+
+        &.footer {
+          height: 162px;
+          color: #999999;
+          background-color: #fff;
+
+          .wrapper {
+            padding-top: 65px;
+
+            text-align: center;
+
+            span, a {
+              line-height: 32px;
+              font-size: 14px;
+              line-height: 19px;
+
+              padding: 0 10px;
+            }
+
+            img { border: 0; }
+
+            a {
+              color: #00AFF0;
+
+              &.logo {
+                position: relative;
+                padding-left: 0;
+                padding-right: 20px;
+                top:-5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

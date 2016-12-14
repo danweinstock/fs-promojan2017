@@ -1,0 +1,546 @@
+// ==========================================================================
+// COMMONALITIES
+// ==========================================================================
+.post-type-archive-press {
+	
+	// ==========================================================================
+	// HERO
+	// ==========================================================================
+	#hero {
+		background: url(../images/hero-press.jpg) 0 0 no-repeat;
+		background-size: cover;
+
+		.v-wrapper,
+		.v-inner {
+			height: 300px;
+
+			@media only screen and (max-width: 1024px) {
+				height: 200px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			height: 200px;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+
+	// ==========================================================================
+	// MAIN
+	// ==========================================================================
+	#main {
+		position: relative;
+		z-index: 10;
+		background: #fff;
+		margin: 380px 0 0 0;
+		padding: 40px 0;
+
+		h2 {
+			margin: 0 0 40px 0;
+			padding: 0;
+		}
+
+		@media only screen and (max-width: 1024px) {
+			margin: 80px 0 0 0;
+			padding: 10px 0;
+		}
+
+		@media only screen and (max-width: 767px) {
+			margin: 60px 0 0 0;
+		}
+
+		@media only screen and (max-width: 650px) {
+			padding: 10px 0;
+		}
+
+		ul {
+
+			li {
+				margin-bottom: 20px;
+				padding-top: 50px;
+				border-top: solid 1px $greyBorder;
+
+				@media only screen and (max-width: 1024px) {
+					
+					img {
+						max-width: 80%;
+					}
+				}
+
+				&:nth-child(1), 
+				&:nth-child(2), 
+				&:nth-child(3) {
+					border-top: none;    
+				} 
+
+				@media only screen and (max-width: 650px) {
+					border-top: none;
+					border-bottom: solid 1px $greyBorder;
+					margin: 0 0 30px 0;
+					padding: 0 0 30px 0;
+
+					&:last-child {
+						padding: 0 0 0 0;
+						border-bottom: none;
+					}
+				}
+
+				h5 {
+					margin-bottom: 1.3em;
+				}
+
+				p {
+					color: $greyBody;
+
+					&.punch {
+						margin-top: 1em;
+						color: $greyDark;
+					}
+				}
+			}
+		}
+	}
+}
+
+// ==========================================================================
+// PRESS KIT
+// ==========================================================================
+#press-kit {
+	background: url(../images/bg-press-kit.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+
+	@media only screen and (max-width: 767px) {
+		padding: 45px 0 20px 0;
+	}
+
+	h2,
+	.punch,
+	h6 {
+		color: #fff;
+	}
+
+	h2 {
+		margin: 0 0 15px 0;
+	}
+
+	.punch {
+		margin: 0 0 60px 0;
+
+		@media only screen and (max-width: 640px) {
+			margin: 0 0 30px 0;
+		}
+	}
+
+	.columns {
+
+		.media-kit-toggle {
+			display: inline-block;
+			padding: 0;
+			border-radius: 50%;
+			width: 125px;
+			height: 125px;
+			background-color: white;
+			transform: scale(0.7);
+			-webkit-transform: scale(0.7);
+			-moz-transform: scale(0.7);
+			-ms-transform: scale(0.7);
+			margin: 0 -16px;
+			transition: opacity 0.3s ease;
+
+			@media only screen and  (min-width: 413px) {
+				transform: scale(0.8);
+				-webkit-transform: scale(0.8);
+				-moz-transform: scale(0.8);
+				-ms-transform: scale(0.8);
+				margin: 0 0;
+			}
+
+			@media only screen and (min-width: 503px) {
+				transform: scale(1);
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1);
+				-ms-transform: scale(1);
+				margin: 0 15px;
+			}
+
+			&#fitstar-media-kit-toggle {
+				.fitstar-text-and-logo {
+					position: absolute;
+					left: 0;
+					right: 0;
+				}
+
+				.icon-fitstar {
+					position: relative;
+					font-size: 10px;
+			    top: 52px;
+			    color: $charcoal;
+				}
+
+				.icon-star {
+					position: relative;
+					font-size: 18px;
+			  	top: 54px;
+			  	color: $red;
+				}
+			}
+
+			&#pt-media-kit-toggle {
+				.icon-star {
+					position: absolute;
+					font-size: 58px;
+					top: 34px;
+					left: 0;
+			    right: 0;
+					color: $red;
+				}
+			}
+
+			&#yoga-media-kit-toggle {
+				.icon-yoga-star {
+					position: absolute;
+					font-size: 58px;
+					top: 34px;
+					left: 0;
+			    right: 0;
+					color: $greenLight;
+				}
+			}
+
+			.text-bottom {
+				position: absolute;
+				bottom: -60px;
+				left: 0;
+				right: 0;
+				color: white;
+			}
+
+			&.active {
+				opacity: 1;
+				transition: opacity 0.3s ease;
+			}
+
+			&.inactive {
+				opacity: 0.5;
+				transition: opacity 0.3s ease;
+			}
+
+			&:hover {
+				opacity: 1;
+				transition: opacity 0.3s ease;
+			}
+		}
+
+		.notch {
+			position: absolute;
+			background: transparent;
+			height: 20px;
+			width: 20px;
+	    left: 50%;
+		  margin-left: -20px;
+			bottom: -110px;
+			border-top: 20px solid $greyLight;
+			border-bottom: 20px solid transparent;
+  		border-right: 20px solid transparent;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			pointer-events: none;
+
+			&.active {
+				display: block;
+			}
+
+			&.inactive {
+				display: none;
+			}
+		}
+
+		#fitstar-media-kit, #pt-media-kit, #yoga-media-kit {
+			border-top: 1px solid $greyLight;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin-top: 35px;
+			transition: margin-top 0.3s ease;
+
+			@media only screen and (min-width: 768px) {
+				padding-bottom: 0;
+			}
+
+			@media only screen and (min-width: 413px) {
+				margin-top: 50px;
+			}
+
+			@media only screen and (min-width: 503px) {
+				margin-top: 79px;
+			}
+
+			@media only screen and (min-width: 1026px) {
+				margin-top: 0;
+			}
+
+			.columns {
+				padding-left: 0;
+				padding-right: 0;
+
+				@media only screen and (min-width: 422px) {
+				  	padding-left: 0.9375em;
+				  	padding-right: 0.9375em;
+				}
+
+				a {
+					@media only screen and (min-width: 320px) and (max-width: 330px) {
+						margin: 0 -5px 30px 0;
+					}
+				}
+			}
+
+			&.active {
+				display: block;
+			}
+
+			&.inactive {
+				display: none;
+			}
+
+			.light-text {
+				color: white;
+			}
+		}
+
+		a {
+			display: block;
+			position: relative;
+			padding: 80px 0 0 0;
+
+			@media only screen and (max-width: 640px) {
+				padding: 100px 0 0 0;
+				margin: 0 0 30px 0;
+			}
+
+			h6 {
+				font-weight: $book;
+				margin: 0 0 2px 0;
+				padding: 0;
+			}
+
+			small {
+				font-size: 12px;
+			}
+
+			.light-text {
+				margin: 0;
+				line-height: 1.2;
+			}
+
+			&:before {
+				position: absolute;
+				display: block;
+				width: 100%;
+				text-align: center;
+				top: 0;
+				left: 0;
+				transition: color ease-out 0.3s;
+
+				@media only screen and (max-width: 640px) {
+					top: 20px;
+				}
+			}
+
+			&.icon-star-line {
+
+				&:before {
+					font-size: 55px;
+					color: $red;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken($red, 10);
+					}
+				}
+			}
+
+			&.icon-appscreens {
+
+				&:before {
+					font-size: 65px;
+					color: $orange;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken($orange, 10);
+					}
+				}
+			}
+
+			&.icon-images {
+
+				&:before {
+					font-size: 70px;
+					color: $cyan;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken($cyan, 10);
+					}
+				}
+			}
+
+			&.icon-factsheet {
+
+				&:before {
+					font-size: 62px;
+					color: #fff;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken(#fff, 30);
+					}
+				}
+			}
+
+			&.icon-play-line {
+
+				&:before {
+					font-size: 65px;
+					color: $green;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken($green, 10);
+					}
+				}
+			}
+
+			&.icon-download {
+
+				&:before {
+					font-size: 62px;
+					color: $red;
+				}
+
+				&:hover {
+
+					&:before {
+						color: darken($red, 10);
+					}
+				}
+			}
+		}
+
+		#yoga-media-kit {
+			a {
+				&.icon-star-line {
+
+					&:before {
+						font-size: 55px;
+						color: #72c49e;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#72c49e, 10);
+						}
+					}
+				}
+
+				&.icon-appscreens {
+
+					&:before {
+						font-size: 65px;
+						color: #00aff0;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#00aff0, 10);
+						}
+					}
+				}
+
+				&.icon-images {
+
+					&:before {
+						font-size: 70px;
+						color: #fd7b6c;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#fd7b6c, 10);
+						}
+					}
+				}
+
+				&.icon-factsheet {
+
+					&:before {
+						font-size: 62px;
+						color: #ffffff;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#ffffff, 30);
+						}
+					}
+				}
+
+				&.icon-play-line {
+
+					&:before {
+						font-size: 65px;
+						color: #e89f34;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#e89f34, 10);
+						}
+					}
+				}
+
+				&.icon-download {
+
+					&:before {
+						font-size: 62px;
+						color: #28ecd8;
+					}
+
+					&:hover {
+
+						&:before {
+							color: darken(#28ecd8, 10);
+						}
+					}
+				}
+			}
+		}
+	}
+}
