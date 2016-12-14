@@ -1543,7 +1543,11 @@ body.home .video-wrapper .video-toolbar [type=range]::-ms-fill-upper { backgroun
 body.home .video-wrapper .video-toolbar [type=range]:focus::-ms-fill-lower { background: linear-gradient(to right, #186AAF 0, #186AAF 20%, #fff 20.1%, #fff 20.4%, #186AAF 20.5%, #6E1EAA 40%, #6E1EAA 50%, #fff 50.1%, #fff 50.4%, #6E1EAA 50.5%, #6E1EAA 70%, #C02F7C 80%, #fff 80.1%, #fff 80.4%, #C02F7C 80.5%, #C02F7C 100%); }
 body.home .video-wrapper .video-toolbar [type=range]:focus::-ms-fill-upper { background: linear-gradient(to right, #186AAF 0, #186AAF 20%, #fff 20.1%, #fff 20.4%, #186AAF 20.5%, #6E1EAA 40%, #6E1EAA 50%, #fff 50.1%, #fff 50.4%, #6E1EAA 50.5%, #6E1EAA 70%, #C02F7C 80%, #fff 80.1%, #fff 80.4%, #C02F7C 80.5%, #C02F7C 100%); }
 
-#hero-home { position: relative; z-index: 1000; display: block; overflow: visible; margin-right: -50px; margin-left: -50px; padding: 0; padding: 0 50px; background: url(../images/hero-homepage.jpg) center no-repeat; background-size: cover; }
+/* eja: TODO: removed existing bg image out */
+/* background: url(../images/hero-homepage.jpg) center no-repeat; */
+/* background: url(../images/jan_promo2017/s01/hero_background_complete.jpg) center no-repeat; */
+/*   background-image: linear-gradient(-180deg, #0A7D93 0%, #00394B 100%); */
+#hero-home { position: relative; z-index: 1000; display: block; overflow: visible; margin-right: -50px; margin-left: -50px; padding: 0; padding: 0 50px; background-image: url("../images/jan_promo2017/s01/hero_background_complete.jpg"); background-size: cover; }
 @media screen and (min-width: 480px) { #hero-home { margin-right: 0; margin-left: 0; } }
 #hero-home .hero-content { padding-top: 30px; text-align: center; position: relative; }
 @media screen and (min-width: 768px) { #hero-home .hero-content { padding: 60px 0 0; } }
@@ -1556,8 +1560,9 @@ body.home .video-wrapper .video-toolbar [type=range]:focus::-ms-fill-upper { bac
 #hero-home p { margin-bottom: 20px; color: #fff; font-size: 18px; font-weight: 500; }
 @media screen and (min-width: 628px) and (max-width: 768px) { #hero-home p { width: 80%; margin: 0 auto 20px; } }
 @media screen and (max-width: 768px) { #hero-home .button, #hero-home .gform_wrapper form .gform_footer input[type="submit"], .gform_wrapper form .gform_footer #hero-home input[type="submit"] { width: 160px; margin: 0 auto; padding-left: 25px; padding-right: 25px; } }
+#hero-home .hero-devices { width: 771px; height: 469px; object-fit: contain; background-image: url("../images/jan_promo2017/s01/01_all_hero_devices_complete.png"); background-repeat: no-repeat; }
 
-.homepage-goals { margin: 0 -50px; padding-top: 100px; padding-right: 50px; padding-left: 50px; background: rgba(0, 0, 0, 0.05); }
+.homepage-goals { margin: 0 -50px; padding-top: 100px; padding-right: 50px; padding-left: 50px; /* background: $fog; */ background-image: url("../images/jan_promo2017/s02/bknd_matte_rectangle_small.png"); background-repeat: no-repeat; background-position: center; }
 @media screen and (min-width: 500px) and (max-width: 1024px) { .homepage-goals { padding-top: 160px; } }
 .homepage-goals .row { position: relative; }
 .homepage-goals .columns { position: static; }
