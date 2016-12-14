@@ -1562,7 +1562,7 @@ body.home .video-wrapper .video-toolbar [type=range]:focus::-ms-fill-upper { bac
 @media screen and (max-width: 768px) { #hero-home .button, #hero-home .gform_wrapper form .gform_footer input[type="submit"], .gform_wrapper form .gform_footer #hero-home input[type="submit"] { width: 160px; margin: 0 auto; padding-left: 25px; padding-right: 25px; } }
 #hero-home .hero-devices { width: 771px; height: 469px; object-fit: contain; background-image: url("../images/jan_promo2017/s01/01_all_hero_devices_complete.png"); background-repeat: no-repeat; }
 
-.homepage-goals { margin: 0 -50px; padding-top: 100px; padding-right: 50px; padding-left: 50px; background: rgba(0, 0, 0, 0.05); }
+.homepage-goals { margin: 0 -50px; padding-top: 100px; padding-right: 50px; padding-left: 50px; /* background: $fog; */ background-image: url("../images/jan_promo2017/s02/bknd_matte_rectangle_small.png"); background-repeat: no-repeat; background-position: center; }
 @media screen and (min-width: 500px) and (max-width: 1024px) { .homepage-goals { padding-top: 160px; } }
 .homepage-goals .row { position: relative; }
 .homepage-goals .columns { position: static; }

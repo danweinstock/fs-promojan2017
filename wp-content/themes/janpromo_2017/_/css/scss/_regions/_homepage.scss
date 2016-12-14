@@ -95,7 +95,10 @@
     padding-top: 100px;
     padding-right: $siteOffset;
     padding-left: $siteOffset;
-    background: $fog;
+    /* background: $fog; */
+    background-image: url("../images/jan_promo2017/s02/bknd_matte_rectangle_small.png");
+    background-repeat: no-repeat;
+    background-position: center;
     @media screen and (min-width: $medium + px) and (max-width: $large + px){
         padding-top: 160px;
     }
