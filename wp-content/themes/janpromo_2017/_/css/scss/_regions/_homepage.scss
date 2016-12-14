@@ -1,6 +1,11 @@
 // ==========================================================================
 // HERO
 // ==========================================================================
+
+/* eja: TODO: removed existing bg image out */
+/* background: url(../images/hero-homepage.jpg) center no-repeat; */
+/* background: url(../images/jan_promo2017/s01/hero_background_complete.jpg) center no-repeat; */
+/*   background-image: linear-gradient(-180deg, #0A7D93 0%, #00394B 100%); */
 #hero-home {
     position: relative;
     z-index: 1000;
@@ -12,8 +17,8 @@
     margin-left: -#{$siteOffset};
     padding: 0;
     padding: 0 $siteOffset;
+    background-image: url("../images/jan_promo2017/s01/hero_background_complete.jpg");
 
-    background: url(../images/hero-homepage.jpg) center no-repeat;
     background-size: cover;
     @media screen and (min-width: 480px) {
         margin-right: 0;
@@ -26,7 +31,7 @@
 
         @media screen and (min-width: $med + px){
             padding: 60px 0 0;
-            
+
         }
         @media screen and (min-width: $large + px){
              text-align: left;
@@ -39,7 +44,7 @@
             @media screen and (max-width: 1023px){
                 margin: auto;
             }
-           
+
         }
     }
     .title {
