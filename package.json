@@ -1,0 +1,29 @@
+{
+  "name": "fitbit-project",
+  "version": "1.0.0",
+  "description": "FitStar Promo Site January 2017",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-sass": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danweinstock/fs-promojan2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danweinstock/fs-promojan2017/issues"
+  },
+  "homepage": "https://github.com/danweinstock/fs-promojan2017#readme"
+}
